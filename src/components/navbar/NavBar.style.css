@@ -3,7 +3,7 @@
     background-color: white;
   }
   
-  .topnav a {
+  .topnav .linkTo {
     float: right;
     color: #3e6aaf;
     text-align: center;
@@ -13,13 +13,13 @@
     margin-top: 5px;
   }
   
-  .topnav a:hover {
+  .topnav .linkTo:hover {
     text-decoration: underline; 
     text-decoration-color:#f74f68;
   }
   
   
-  .topnav a.active {
+  .topnav .linkTo.active {
     background-color: #f0c936;
     color: white;
   } 
