@@ -19,17 +19,18 @@ class NavBar extends Component {
             <Router>
                 <div className="topnav">
                     <div>
-                        <img alt="logo" src={Logo} className="logoView"></img>
+                        <Link to="/">
+                            <img  alt="logo" src={Logo} className="logoView"></img>
+                        </Link>
+
                     </div>
-                    <Link to="/contact" className="linkTo" >Contácto</Link>
-                    <Link to="/experience" className="linkTo" >Experiencia</Link>
+                    <a className="linkTo" >Contácto</a>
+                    <a className="linkTo" >Experiencia</a>
                     <Link to="/tech" className="linkTo" >Tecnologías</Link>
                     <Link to="/" className="linkTo" >Inicio</Link>
                 </div>
                 <Switch>
                     <Route exact path="/" component={HomeComponent} />
-                    <Route exact path="/contact" component={ContactComponent} />
-                    <Route exact path="/experience" component={ExperienceComponent} />
                     <Route exact path="/tech" component={TechComponent} />
                     <Route component={notFound} />
                 </Switch>

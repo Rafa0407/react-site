@@ -1,15 +1,21 @@
 import React, { Component } from "react";
 
+/*Styles */
+import './home.style.css';
+import { Column, Row } from 'simple-flexbox';
 
-
-// import Main from '../../routes/Routes'
+/*components */
+import Slider from './slider/slider.component';
 
 class HomeComponent extends Component {
   render() {
     return (
-      <div className='home'>
-                <h1>Home</h1>
-			</div>
+      <section className="sliderSection">
+        <Column flex>
+          <Slider />
+        </Column>
+      </section>
+
     )
   }
 }
