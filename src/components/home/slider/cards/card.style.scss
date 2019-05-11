@@ -1,27 +1,92 @@
+/*Mixin for responsive text*/ 
+
+$layout-max-width: 720px;
+$font-bound-min:   320px; // will override defaults
+$font-bound-max:   720px; // will override defaults
+
+
+// ==============================
+// Font size mixin
+// ==============================
+
+//  default font scale bounding
+$font-lock-min:  400px !default; 
+$font-lock-max: 1000px !default;
+
+//  font-size 
+@mixin font-size(
+  $min,                         // font-size 
+  $max: null,                   // optional maximum font size
+  $lock-min: $font-lock-min,  // optional minimum viewport width 
+  $lock-max: $font-lock-max   // optional maximum viewport width 
+  ){
+    & { font-size: $min; }
+    @if $max {
+      @media (min-width: $lock-min) and (max-width: $lock-max){ 
+        & { 
+          font-size: calc(
+            #{$min} + 
+            #{num($max) - num($min)} * 
+            (100vw - #{$lock-min}) / 
+            #{num($lock-max) - num($lock-min)}
+          ); 
+        } 
+      }
+      @media (min-width: $lock-max){ 
+        & { font-size: $max; } 
+      }
+    }
+}
+
+.cardContainer{
+  
+  height: 80vh;
+  display: flex;
+  flex: auto; 
+  .buttomContainer{
+    flex-basis: 30%;
+    margin: auto;
+    align-content: center;
+    .btn1{
+          background-color: #3e6aaf; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: left;
+          text-decoration: none;
+          display: inline-block;
+          @include font-size(0.5em, 1.2em, 1.0em, 0.9em);
+          max-width: 50%;
+          width: auto; 
+          height: auto;
+      } 
+
+      .textInfo{
+          max-width: 100%;
+          max-height: auto;
+          text-align: center; 
+          text-decoration: none;
+          width: 40vh; 
+          font-size: 1em;
+          color: #3e6aaf;
+      }
+          
+  }
+  .imageContainer{
+    flex-basis: 70%;
+    align-content: center;
+    margin: auto;
+    position: relative;
+    bottom: -5px;
+  }
+}
+/*NO OLVIDAR DARLE SEGUIMIENTO A ESTO..... TRABAJANDO RESPONSIVE DEL SLIDESHOW, TTRABAJANDO EN LOS BOTTOMS Y Z-INDEX*/
 .slideImage {
     max-width: 100%;
-    width: 100vh;
-    height: 90vh; 
-    float: left;
+    width:  145vh;
+    height: auto; 
+    position: absolute;
+    // bottom: -350px;
+    // right: 125px;
   }
 
-  .btn1{
-        background-color: #3e6aaf; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 1.2em;
-        width: 30vh; 
-        height: 10vh;
-  } 
-
-  .textInfo{
-    text-align: left; 
-    text-decoration: none;
-    width: 40vh; 
-    font-size: 0.9em;
-    color: #3e6aaf;
-  }

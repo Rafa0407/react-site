@@ -1,24 +1,38 @@
-* {box-sizing:border-box}
+
+
+.sliderSection1 {
+  
+  position: static;
+  // 
+}
+
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  margin: auto; 
-  
+  display: flex;  
+  flex-flow: row wrap;
+  text-align: center;
+  max-width: 100%;
+  height: 80vh; 
+  background-color: aqua;
+}
+
+.slideshow-container > * {
+  flex: 1 100%;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  // justify-content: center;
 }
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  // position: absolute;
+  position: absolute;
   top: 50%;
   width: auto;
-  // margin-top: -22px;
+  margin-top: -22px;
   padding: 16px;
   color: #3e6aaf;
   font-weight: bold;
@@ -56,15 +70,6 @@
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -79,12 +84,29 @@
 
 .active, .dot:hover {
   background-color: #3e6aaf;
+  
+}
+.dotContainer{
+  background-color: #f74f68;
+  height: 15vh; 
+  align-self: center;
+}
+.dotUbication { 
+    
+    height: 10vh; 
+    width: auto;
+    background-color: #f74f68;
+}
+@media all and (min-width: 600px) {
+  .indicator { flex: 1 0 0; }
 }
 
-.dotUbication{
-  position: absolute;
-  bottom: 0;
-  align-content: center;
+@media all and (min-width: 800px) {
+  .mySlides    { flex: 3 0px; }
+  .prev { order: 1; } 
+  .mySlides    { order: 2; }
+  .next { order: 3; }
+  .dotContainer  { order: 4; }
 }
 /* Fading animation */
 .fade {

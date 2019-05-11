@@ -12,25 +12,28 @@ class Slider extends Component {
 
     render = () => {
         return (
-            <div >
-                <div className="slideshow-container">
+            <section className="sliderSection1">
+                <Column flex>
+                    <div className="slideshow-container">
 
+                        <div className="mySlides fade">
+                            <Card />
+                        </div>
+                        <a className="indicator prev" >&#10094;</a>
 
-                    <a className="prev" >&#10094;</a>
-
-                    <a className="next" >&#10095;</a>
-
-                    <div className="dotUbication">
-                        <span className="dot"></span>
-                        <span className="dot"></span>
-                        <span className="dot"></span>
-                    </div>
+                        <a className="indicator next" >&#10095;</a>
+                            <div alignItems='center' className="dotContainer"> 
+                                <div className="dots">
+                                    <span className="dot"></span>
+                                    <span className="dot"></span>
+                                    <span className="dot"></span>
+                                    <span className="dot"></span>
+                                </div>
+                            </div>
                 </div>
-                <Card />
-
-
-            </div>
-
+            </Column>
+          </section>
+               
         )
     }
 }
