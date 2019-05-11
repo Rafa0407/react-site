@@ -6,16 +6,22 @@ import '../cards/card.style.css';
 import slider1 from '../../../../../public/images/slider1.png' 
 
 class Card extends Component {
+  constructor(props){
+    super(props);
+  }
+
   render() {
     return (
       <div>
-        <Row vertical='center' className="cardContainer">
-          <Column alignItems='center' className="buttomContainer">
-            <h3 className="textInfo"> Vinet es el socio tecnológico para potenciar la transformación digital, en su compañía. </h3>
-            <button className="btn1">Sucsess Team</button>
+        <Row className="cardContainer">
+          <Column onMedium="column" onSmall="column" alignItems='center' className="buttomContainer">
+           <div>
+              <p  className="textInfo">{this.props.slideParagraph}</p>
+              <button className="btn">{this.props.btnText}</button>
+           </div>
           </Column>
           <Column alignItems='center'className="imageContainer">
-              <img alt="slideImage" className="slideImage" src={ slider1 }/>
+              <img alt="slideImage" className="slideImage" src={ this.props.sliderImage }/>
           </Column>
         </Row>
       </div>

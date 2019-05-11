@@ -9,10 +9,24 @@ import Card from './cards/card.component';
 
 class Slider extends Component {
     // slider functions  
+    /*card = {
+
+    }*/ 
 
     render = () => {
+     
         return (
-            <section className="sliderSection1">
+ 
+               
+        )
+    }
+}
+
+export default Slider;
+
+
+/*
+           <section className="sliderSection1">
                 <Column flex>
                     <div className="slideshow-container">
 
@@ -33,9 +47,4 @@ class Slider extends Component {
                 </div>
             </Column>
           </section>
-               
-        )
-    }
-}
-
-export default Slider;
+*/
