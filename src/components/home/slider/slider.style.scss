@@ -6,8 +6,18 @@
   // 
 }
 
+/*dots container*/
+.slick-dots{
+  background-color: #f74f68;
+  height: 10vh;
+}
 
-/* Slideshow container */
+.slide{
+  width: 99vw;
+}
+/*
+
+/Slideshow container/
 .slideshow-container {
   display: flex;  
   flex-flow: row wrap;
@@ -21,13 +31,13 @@
   flex: 1 100%;
 }
 
-/* Hide the images by default */
+/* Hide the images by default /
 .mySlides {
   // display: none;
   
 }
 
-/* Next & previous buttons */
+/* Next & previous buttons /
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -49,18 +59,18 @@
   float: right;
 }
 
-/* Position the "next button" to the right */
+/* Position the "next button" to the right /
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with a little bit see-through /
 .prev:hover, .next:hover {
   background-color: #e0e0e0;
 }
 
-/* Caption text */
+/* Caption text /
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -71,7 +81,7 @@
   text-align: center;
 }
 
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicators /
 .dot {
   cursor: pointer;
   height: 15px;
@@ -109,7 +119,7 @@
   .next { order: 3; }
   .dotContainer  { order: 4; }
 }
-/* Fading animation */
+/* Fading animation /
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -126,3 +136,4 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+*/

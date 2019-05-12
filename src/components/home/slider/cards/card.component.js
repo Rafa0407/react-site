@@ -3,7 +3,7 @@ import { Column, Row } from 'simple-flexbox';
 
 
 import '../cards/card.style.css';  
-import slider1 from '../../../../../public/images/slider1.png' 
+
 
 class Card extends Component {
   constructor(props){
@@ -16,12 +16,12 @@ class Card extends Component {
         <Row className="cardContainer">
           <Column onMedium="column" onSmall="column" alignItems='center' className="buttomContainer">
            <div>
-              <p  className="textInfo">{this.props.slideParagraph}</p>
-              <button className="btn">{this.props.btnText}</button>
+              <p  className="textInfo">{ this.props.card.slideParagraph }</p>
+              <a href= { this.props.card.linkTo }  className="btn">{ this.props.card.btnText }</a>
            </div>
           </Column>
           <Column alignItems='center'className="imageContainer">
-              <img alt="slideImage" className="slideImage" src={ this.props.sliderImage }/>
+              <img alt="slideImage" className="slideImage" src={ this.props.card.sliderImage }/>
           </Column>
         </Row>
       </div>
