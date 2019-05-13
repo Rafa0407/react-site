@@ -1,16 +1,30 @@
 .topnav {
-    overflow: hidden;
-    background-color: white;
+  list-style: none;
+  margin: 0; 
+  
+  background: white;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
   }
   
   .topnav .linkTo {
-    float: right;
     color: black;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     margin-top: 5px;
+
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    // color: white;
   }
   
   .topnav .linkTo:hover {
@@ -24,8 +38,35 @@
     color: white;
   } 
 
-  .logoView {
+  .menuLogo {
     width: 100px;
     height: 80px; 
-    float: left;
   }
+
+  .logoContainer{
+    float: left; 
+
+  } 
+
+  
+@media all and (max-width: 800px) {
+  .topnav {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .topnav {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .topnav .linkTo{ 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+}

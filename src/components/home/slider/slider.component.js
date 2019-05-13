@@ -16,7 +16,8 @@ import sliderImage4 from '../../../../public/images/slider4.png';
 class SlidShow extends Component {
 
     // check the next and prev buttoms 
-    render = () => {
+    render = () => { 
+
         let card1 = {
             slideParagraph: 'Vinet es el socio tecnológico para potenciar la transformación digital, en su compañía.', 
             btnText: 'Sucsess Team', 
@@ -33,10 +34,10 @@ class SlidShow extends Component {
             slideParagraph: 'Experiencia para entregar tecnología segura, escalable y sorprendente.', 
             btnText: 'Tecnologías', 
             sliderImage: sliderImage3, 
-            linkTo: '/'
+            linkTo: '/tech'
         }
         let card4 = {
-            slideParagraph: 'Planificamos, diseñamos e implementamos soluciones sostenibles para la Era digital.', 
+            slideParagraph: 'Planificamos, diseñamos e implementamos soluciones sostenibles para la era digital.', 
             btnText: 'Experiencia', 
             sliderImage: sliderImage4,
             linkTo: '/'
@@ -48,11 +49,11 @@ class SlidShow extends Component {
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            // arrows: true, 
+            arrows: false,
             // autoplay: true,  /*properties for autoplay slideshow, uncomment until work´is fine*/
             // speed: 2000,
-            // autoplaySpeed: 5000,
-            pauseOnHover: true,
+            // autoplaySpeed: 2000,
+            // pauseOnHover: true,
             responsive: [
                 {
                   breakpoint: 1024,
@@ -61,7 +62,6 @@ class SlidShow extends Component {
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true, 
-                    //arrows: true
                   }
                 },
                 {
@@ -70,7 +70,6 @@ class SlidShow extends Component {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1, 
-                    //arrows: true
                   }
                 },
                 {
@@ -78,7 +77,6 @@ class SlidShow extends Component {
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1, 
-                    //arrows: true
                   }
                 }
               ]
@@ -86,7 +84,7 @@ class SlidShow extends Component {
           
         return (
  
-            <Slider className="slide" {...settings}>
+            <Slider {...settings}>
             <div>
                 <Card card={card1}/>
             </div>

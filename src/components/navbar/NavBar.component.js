@@ -18,11 +18,10 @@ class NavBar extends Component {
         return (
             <Router>
                 <div className="topnav">
-                    <div>
+                    <div className="logoContainer">
                         <Link to="/">
-                            <img  alt="logo" src={Logo} className="logoView"></img>
+                            <img  alt="logo" src={Logo} className="menuLogo"></img>
                         </Link>
-
                     </div>
                     <a className="linkTo" >Contácto</a>
                     <a className="linkTo" >Experiencia</a>

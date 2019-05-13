@@ -1,10 +1,11 @@
 
 .cardContainer{
-  height: 80vh;
+  height: 85vh;
   
   .buttomContainer{
     flex-basis: 30%;
     margin: auto;
+    flex-flow: row wrap;
     // align-content: center;
     .btn{
           background-color: #3e6aaf; 
@@ -24,7 +25,8 @@
           max-height: auto;
           text-align: left; 
           text-decoration: none;
-          width: 40vh; 
+          text-align: center;
+          width: 25vw; 
           font-size: 1em;
           color: #3e6aaf;
       }
@@ -39,10 +41,65 @@
       width:  auto;
       height: auto; 
       position: absolute;
-      // z-index: 1;
+      }
     }
+      /* Medium screens */
+      @media all and (max-width: 800px) {
+        .cardContainer{
+          height: 120vh;
+        }
+      }
+      @media all and (max-width: 800px) {
+        .imageContainer{
+          flex-basis: 80% !important;
+          align-content: center;
+          position: relative;
+        }
+      }
+      @media all and (max-width: 800px) {
+        .buttomContainer{
+          flex-basis: 20%;
+          align-content: center;
+          margin: auto;
+        }
+
+      }
+      @media all and (max-width: 800px) {
+        .textInfo{
+          width: 90vw !important; 
+          font-size: 1em;
+      }
+      }
+      @media all and (max-width: 800px) {
+        .slideImage{
+          max-width: 75%;
+          width:  auto;
+          height: 45vh !important; 
+          left: 25px;
+          bottom: 9px;
+        }
+      }
+        /* Small screens */
+        @media all and (max-width: 500px) {
+          .cardContainer{
+            height: 80vh;
+          }
+        }
+        @media all and (max-width: 500px) {
+          .imageContainer{
+            flex-basis: 47% !important;
+            align-content: center;
+            position: relative;
+
+          }
+        }
+        @media all and (max-width: 500px) {
+          .buttomContainer{
+            flex-basis: 40%;
+            align-content: center;
+            margin-bottom: 0px;
+          }
+        }
   }
-}
-/*NO OLVIDAR DARLE SEGUIMIENTO A ESTO..... TRABAJANDO RESPONSIVE DEL SLIDESHOW, TTRABAJANDO EN LOS BOTTOMS Y Z-INDEX*/
 
 
