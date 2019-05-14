@@ -1,5 +1,23 @@
 .techPreviewSection{
-    background-color: #f74f68; 
-    margin: auto;
+    background-color: #f74f69; 
+    margin-top: 25px;
     height: 85vh;
 }
+.techContainer{
+    // right: 15px;
+    list-style: none;
+    // margin: 0; 
+    background: #f74f68;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+@media all and (max-width: 600px) {
+    .techContainer {
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      padding: 0;
+    }
+  }

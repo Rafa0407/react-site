@@ -1,0 +1,39 @@
+.techCardContainer{
+    width: 350px;
+}
+.techImageContainer{
+    flex-basis: 70%;
+    .techCardImage{
+        width: 130px;
+        height: 115px;
+    }
+}
+.techInfoContainer{
+    flex-basis: 30%;
+    width: 190px;
+    .pharagrapContainer{
+        height: 95px;
+        display: none;
+    }
+    .techBtn{ 
+        
+        background-color: #3e6aaf; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: none; 
+        font-size: 1em;
+        max-width: 50%;
+        width: auto; 
+        height: auto;
+    } 
+}
+.techCardContainer:hover{
+    .techBtn{
+        display: inline-block;
+    }
+    .pharagrapContainer{
+        display: flex;
+    }
+}
