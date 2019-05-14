@@ -1,17 +1,14 @@
 .topnav {
+  right: 15px;
   list-style: none;
   margin: 0;
   background: white;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   justify-content: flex-end; }
 
 .topnav .linkTo {
-  color: black;
+  color: #364066;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
@@ -29,15 +26,16 @@
   color: white; }
 
 .menuLogo {
-  width: 100px;
-  height: 80px; }
+  width: 100px; }
 
 .logoContainer {
-  float: left; }
-
-@media all and (max-width: 800px) {
-  .topnav {
-    justify-content: space-around; } }
+  list-style: none;
+  margin-left: 15px;
+  background: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  position: absolute; }
 
 @media all and (max-width: 600px) {
   .topnav {
@@ -48,4 +46,7 @@
     text-align: center;
     padding: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); } }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .logoContainer {
+    position: relative;
+    justify-content: center; } }

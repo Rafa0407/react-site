@@ -9,131 +9,15 @@
 /*dots container*/
 .slick-dots{
   background-color: #f74f68;
-  height: 10vh;
+  height: 15vh;
+  z-index: -1;
 }
-
+.slick-dots li{
+  top: 40px;
+}
+.slick-dots li.slick-active button:before {
+  color: #3e6aaf !important;  
+}
 .slide{
   width: 95vw;
 }
-/*
-
-/Slideshow container/
-.slideshow-container {
-  display: flex;  
-  flex-flow: row wrap;
-  text-align: center;
-  max-width: 100%;
-  height: 80vh; 
-  // background-color: aqua;
-}
-
-.slideshow-container > * {
-  flex: 1 100%;
-}
-
-/* Hide the images by default /
-.mySlides {
-  // display: none;
-  
-}
-
-/* Next & previous buttons /
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #3e6aaf;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-} 
-.prev {
-  float: left; 
-}
-.next {
-  float: right;
-}
-
-/* Position the "next button" to the right /
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through /
-.prev:hover, .next:hover {
-  background-color: #e0e0e0;
-}
-
-/* Caption text /
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators /
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #3e6aaf;
-  
-}
-.dotContainer{
-  background-color: #f74f68;
-  height: 15vh; 
-  align-self: center;
-}
-.dotUbication { 
-    
-    height: 10vh; 
-    width: auto;
-    background-color: #f74f68;
-}
-@media all and (min-width: 600px) {
-  .indicator { flex: 1 0 0; }
-}
-
-@media all and (min-width: 800px) {
-  .mySlides    { flex: 3 0px; }
-  .prev { order: 1; } 
-  .mySlides    { order: 2; }
-  .next { order: 3; }
-  .dotContainer  { order: 4; }
-}
-/* Fading animation /
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-*/

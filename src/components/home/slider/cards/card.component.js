@@ -13,7 +13,7 @@ class Card extends Component {
   render() {
     return (
       <div>
-        <Row onSmall='column' onMedium='column' className="cardContainer">
+        <Row onSmall='column' onMedium='column'  className="cardContainer">
           <Column onMedium="row" onSmall="row" alignItems='center' className="buttomContainer">
            <div>
               <p  className="textInfo">{ this.props.card.slideParagraph }</p>

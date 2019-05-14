@@ -2,15 +2,18 @@ import React, { Component } from "react";
 
 /*Styles */
 import './home.style.css';
-import { Column, Row } from 'simple-flexbox';
 
 /*components */
 import Slider from './slider/slider.component';
+import TechPreview from '../tech-preview/tech-preview.component';
 
 class HomeComponent extends Component {
   render() {
     return (
-          <Slider />
+          <div>
+            <Slider />
+            <TechPreview />
+          </div>
     )
   }
 }

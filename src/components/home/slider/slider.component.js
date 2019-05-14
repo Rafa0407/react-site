@@ -13,7 +13,7 @@ import sliderImage2 from '../../../../public/images/slider2.png';
 import sliderImage3 from '../../../../public/images/slider3.png';  
 import sliderImage4 from '../../../../public/images/slider4.png';  
 
-class SlidShow extends Component {
+class SlideShow extends Component {
 
     // check the next and prev buttoms 
     render = () => { 
@@ -97,35 +97,9 @@ class SlidShow extends Component {
             <div>
                 <Card card={card4}/>
             </div>
-
           </Slider>  
         )
     }
 }
 
-export default SlidShow;
-
-
-/*
-           <section className="sliderSection1">
-                <Column flex>
-                    <div className="slideshow-container">
-
-                        <div className="mySlides fade">
-                            <Card />
-                        </div>
-                        <a className="indicator prev" >&#10094;</a>
-
-                        <a className="indicator next" >&#10095;</a>
-                            <div alignItems='center' className="dotContainer"> 
-                                <div className="dots">
-                                    <span className="dot"></span>
-                                    <span className="dot"></span>
-                                    <span className="dot"></span>
-                                    <span className="dot"></span>
-                                </div>
-                            </div>
-                </div>
-            </Column>
-          </section>
-*/
+export default SlideShow;

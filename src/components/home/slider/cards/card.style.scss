@@ -42,63 +42,74 @@
       height: auto; 
       position: absolute;
       }
+    } 
+    @media all and (max-width: 1350px) {
+      .slideImage{
+        max-width: 100% !important;
+      }
     }
       /* Medium screens */
       @media all and (max-width: 800px) {
         .cardContainer{
-          height: 120vh;
+          height: 120vh !important;
         }
-      }
-      @media all and (max-width: 800px) {
         .imageContainer{
-          flex-basis: 80% !important;
+          flex-basis: 60% !important;
           align-content: center;
           position: relative;
         }
-      }
-      @media all and (max-width: 800px) {
         .buttomContainer{
           flex-basis: 20%;
           align-content: center;
           margin: auto;
         }
-
-      }
-      @media all and (max-width: 800px) {
         .textInfo{
           width: 90vw !important; 
           font-size: 1em;
       }
+      .slideImage{
+        max-width: 75% !important;
+        width:  auto;
+        height: 45vh !important; 
+        left: 25px;
+        bottom: 9px;
+      }
       }
       @media all and (max-width: 800px) {
-        .slideImage{
-          max-width: 75%;
-          width:  auto;
-          height: 45vh !important; 
-          left: 25px;
-          bottom: 9px;
-        }
+
+      }
+      @media all and (max-width: 800px) {
+
+
+      }
+      @media all and (max-width: 800px) {
+  
+      }
+      @media all and (max-width: 800px) {
+
       }
         /* Small screens */
         @media all and (max-width: 500px) {
           .cardContainer{
             height: 80vh;
           }
-        }
-        @media all and (max-width: 500px) {
           .imageContainer{
             flex-basis: 47% !important;
             align-content: center;
             position: relative;
 
           }
-        }
-        @media all and (max-width: 500px) {
           .buttomContainer{
             flex-basis: 40%;
             align-content: center;
             margin-bottom: 0px;
           }
+        }
+        @media all and (max-width: 500px) {
+
+        }
+        @media all and (max-width: 500px) {
+  
         }
   }
 
