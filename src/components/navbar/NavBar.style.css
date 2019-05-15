@@ -26,7 +26,8 @@
   color: white; }
 
 .menuLogo {
-  width: 100px; }
+  width: 100px;
+  height: 60px; }
 
 .logoContainer {
   list-style: none;

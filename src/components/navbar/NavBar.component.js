@@ -24,9 +24,9 @@ class NavBar extends Component {
                 </div>
                 <div className="topnav">
                     <Link to="/" className="linkTo" >Inicio </Link>
-                    <Link to="/tech" className="linkTo" >Tecnologías</Link>
+                    <a href="#tech" className="linkTo">Tecnologías</a>
                     <a  href="#experience" className="linkTo" >Experiencia</a>
-                    <a  className="linkTo" >Contácto</a>
+                    <a  href="#contacus" className="linkTo" >Contácto</a>
                 </div>
                 <Switch>
                     <Route exact path="/" component={HomeComponent} />
