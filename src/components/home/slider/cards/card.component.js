@@ -13,14 +13,14 @@ class Card extends Component {
   render() {
     return (
       <div>
-        <Row onSmall='column' onMedium='column'  className="cardContainer">
-          <Column onMedium="row" onSmall="row" alignItems='center' className="buttomContainer">
+        <Row  onLarge="row" onMedium='column' onSmall='column' className="cardContainer">
+          <Column alignItems='center' className="buttomContainer">
            <div>
               <p  className="textInfo">{ this.props.card.slideParagraph }</p>
               <a href= { this.props.card.linkTo }  className="btn">{ this.props.card.btnText }</a>
            </div>
           </Column>
-          <Column onMedium="row" onSmall="row" alignItems='center'className="imageContainer">
+          <Column alignItems='center' className="imageContainer">
               <img alt="slideImage" className="slideImage" src={ this.props.card.sliderImage }/>
           </Column>
         </Row>

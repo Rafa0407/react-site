@@ -1,6 +1,9 @@
 .techCardContainer{
     width: 350px;
+    text-align: center;
 }
+
+
 .techImageContainer{
     flex-basis: 70%;
     .techCardImage{
@@ -10,7 +13,11 @@
 }
 .techInfoContainer{
     flex-basis: 30%;
-    width: 190px;
+    // width: 70px;
+    align-self: center; 
+    .techTextInfo{
+        text-align: center;
+    }
     .pharagrapContainer{
         height: 95px;
         display: none;
@@ -37,3 +44,29 @@
         display: flex;
     }
 }
+
+/*REVISAR EN VISTA MOBILE*/
+@media all and (max-width: 756px) {
+    .techCardContainer {
+        width: 200px;
+    }
+    .techCardImage{
+        width: 70px;
+        height: 50px;
+    }
+    .techImageContainer .techCardImage{
+        width: 100px;
+        height: 80px;
+    }
+    .techPreviewSection{
+        height: 110vh;
+    }
+  }
+  @media all and (max-width:  400px) {
+    .techCardContainer {
+        width: 155px;
+    }
+    .techPreviewSection{
+        height: 138vh;
+    }
+  }

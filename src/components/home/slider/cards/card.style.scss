@@ -1,12 +1,11 @@
 
 .cardContainer{
-  height: 85vh;
-  
+  height: 100vh;
   .buttomContainer{
     flex-basis: 30%;
     margin: auto;
     flex-flow: row wrap;
-    // align-content: center;
+    text-align: center;
     .btn{
           background-color: #3e6aaf; 
           border: none;
@@ -17,7 +16,7 @@
           font-size: 1em;
           max-width: 50%;
           width: auto; 
-          height: auto;
+          height: auto,
       } 
 
       .textInfo{
@@ -37,80 +36,69 @@
     align-content: center;
     position: relative;
     .slideImage {
-      max-width: 70%;
+      max-width: 100%;
       width:  auto;
-      height: auto; 
+      height: 96vh; 
       position: absolute;
       }
     } 
-    @media all and (max-width: 1350px) {
-      .slideImage{
-        max-width: 100% !important;
-      }
+  }
+  @media all and (min-width: 901px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .slideImage{
+      max-width: 99% !important;
+      top: 13px;
+      height: 92vh;
     }
-      /* Medium screens */
-      @media all and (max-width: 800px) {
+    .cardContainer{
+      height: 100vh;
+      display: inline-grid;
+    }
+  }
+    // Medium screens 
+    @media all and (max-width: 900px) {
+      .cardContainer{
+        height: 100vh !important;
+        flex-flow: column !important;
+      }
+      .imageContainer{
+        flex-basis: 60% !important;
+        align-content: center;
+        position: relative;
+      }
+      .buttomContainer{
+        flex-basis: 20%;
+        align-content: center;
+        margin: auto;
+      }
+      .textInfo{
+        width: 90vw !important; 
+        font-size: 1em;
+    }
+    .slideImage{
+      max-width: 85% !important;
+      height: 80vh !important;
+      bottom: 25px;
+    }
+    }
+      // Small screens 
+      @media all and (max-width: 600px) {
         .cardContainer{
-          height: 120vh !important;
+          height: 80vh;
+          flex-flow: column !important; 
         }
         .imageContainer{
-          flex-basis: 60% !important;
+          flex-basis: 47% !important;
           align-content: center;
           position: relative;
         }
+        .slideImage{
+          max-width: 96% !important;
+          height: 65vh !important;
+          bottom: 35px;
+        }
         .buttomContainer{
-          flex-basis: 20%;
+          flex-basis: 40%;
           align-content: center;
-          margin: auto;
+          margin-bottom: 0px;
         }
-        .textInfo{
-          width: 90vw !important; 
-          font-size: 1em;
       }
-      .slideImage{
-        max-width: 75% !important;
-        width:  auto;
-        height: 45vh !important; 
-        left: 25px;
-        bottom: 9px;
-      }
-      }
-      @media all and (max-width: 800px) {
-
-      }
-      @media all and (max-width: 800px) {
-
-
-      }
-      @media all and (max-width: 800px) {
-  
-      }
-      @media all and (max-width: 800px) {
-
-      }
-        /* Small screens */
-        @media all and (max-width: 500px) {
-          .cardContainer{
-            height: 80vh;
-          }
-          .imageContainer{
-            flex-basis: 47% !important;
-            align-content: center;
-            position: relative;
-
-          }
-          .buttomContainer{
-            flex-basis: 40%;
-            align-content: center;
-            margin-bottom: 0px;
-          }
-        }
-        @media all and (max-width: 500px) {
-
-        }
-        @media all and (max-width: 500px) {
-  
-        }
-  }
-
-

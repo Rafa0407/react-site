@@ -6,6 +6,7 @@ import './home.style.css';
 /*components */
 import Slider from './slider/slider.component';
 import TechPreview from '../tech-preview/tech-preview.component';
+import Experience from '../experience/experience.component';
 
 class HomeComponent extends Component {
   render() {
@@ -13,6 +14,7 @@ class HomeComponent extends Component {
           <div>
             <Slider />
             <TechPreview />
+            <Experience />
           </div>
     )
   }

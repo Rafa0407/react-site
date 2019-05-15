@@ -1,9 +1,7 @@
 
 
-.sliderSection1 {
-  
-  position: static;
-  // 
+.sliderSection {
+  height: auto;
 }
 
 /*dots container*/
@@ -17,7 +15,4 @@
 }
 .slick-dots li.slick-active button:before {
   color: #3e6aaf !important;  
-}
-.slide{
-  width: 95vw;
 }

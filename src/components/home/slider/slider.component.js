@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { Column, Row } from 'simple-flexbox';
 
 import '../slider/slider.style.css';
 
@@ -50,54 +49,31 @@ class SlideShow extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
+            adaptiveHeight: true,
             // autoplay: true,  /*properties for autoplay slideshow, uncomment until work´is fine*/
             // speed: 2000,
             // autoplaySpeed: 2000,
             // pauseOnHover: true,
-            responsive: [
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true, 
-                  }
-                },
-                {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1, 
-                  }
-                },
-                {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1, 
-                  }
-                }
-              ]
           }; 
           
         return (
- 
-            <Slider {...settings}>
-            <div>
-                <Card card={card1}/>
-            </div>
-            <div>
-                <Card card={card2}/>
-            </div>
-            <div>
-                <Card card={card3}/>
-            </div>
-            <div>
-                <Card card={card4}/>
-            </div>
-          </Slider>  
+          <section className="sliderSection">
+              <Slider {...settings}>
+              <div>
+                  <Card card={card1}/>
+              </div>
+              <div>
+                  <Card card={card2}/>
+              </div>
+              <div>
+                  <Card card={card3}/>
+              </div>
+              <div>
+                  <Card card={card4}/>
+              </div>
+            </Slider> 
+          </section>
+
         )
     }
 }
