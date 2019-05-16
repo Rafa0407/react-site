@@ -64,7 +64,6 @@ class Experience extends Component {
                           )} 
               </ul>
             </div>
-
         </section>
     );
   }

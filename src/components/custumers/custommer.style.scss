@@ -1,0 +1,122 @@
+.custommerSection{
+        background-color: white; 
+        height: 100vh;
+}
+
+.custommerContainer{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 69px;
+}
+
+.custommer-item{
+    padding: 20px;
+    width: 235px;
+    height: 145px;
+    align-self: center;
+    text-align: center;
+}
+
+.custommerImage{
+    max-width: 100%; 
+    width: 150px;
+    height: 130px; 
+}
+/*BORDERS.... fix this hack later... or other designer cus i can't :'v*/
+.column1{
+    border: 1.1px solid #353f69;
+    border-top: 0px;   
+    border-bottom: 0px;   
+    border-right:  2.7px solid #353f69;   
+    border-left: 0px;     
+}
+.column2{
+    border: 1.1px solid #353f69;
+    border-bottom: 0px;   
+    border-top: 2.7px solid #353f69;
+    border-right:  2.7px solid #353f69;   
+    border-left: 0px;    
+}
+.column2 .custommerImage {
+    top: 10px;
+}
+.lasted{
+    border-right: 0px solid #3e6aaf;  
+}
+
+/*@media all and (max-width: 600px) {
+    .custommerContainer {
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      padding: 0;
+    }
+  }*/ 
+  @media all and (max-width: 1265px) {
+    .custommer-item {
+        padding: 15px;
+        width: 180px;
+        height: 136px;
+    }
+    .custommerImage{
+        max-width: 100%;
+        width: 130px;
+        height: 90px;
+        padding: 30px;
+    }
+  }
+
+  @media all and (max-width: 1000px) {
+    .custommerContainer{
+        padding: 40px;
+    }
+    .custommer-item {
+        padding: 10px;
+        width: 160px;
+        height: 120px;
+    }
+    .custommerImage{
+        max-width: 100%;
+        width: 130px;
+        height: 90px;
+        padding: 30px;
+    }
+  }
+
+  @media all and (max-width: 824px) {
+    .custommerContainer{
+        padding: 40px;
+    }
+    .custommer-item {
+        padding: 10px;
+        width: 122px;
+        height: 100px;
+    }
+    .custommerImage{
+        max-width: 100%;
+        width: 85px;
+        height: 56px;
+        padding: 10px;
+    }
+  }
+
+  /*SLIDER STYLES*/
+  .sliderOnMobile{
+      display: none;
+  }
+ 
+  @media all and (max-width: 672px) {
+    .sliderOnMobile{
+        display: flex;
+    }
+    .custommerContainer{
+        display: none;
+    }
+    .custommerImageSlide{
+        max-width: 100%;
+        width: 120px;
+        height: 100px;
+        padding: 10px;
+      }
+  }

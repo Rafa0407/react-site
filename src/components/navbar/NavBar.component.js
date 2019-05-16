@@ -17,17 +17,20 @@ class NavBar extends Component {
     render() {
         return (
             <Router>
-                <div className="logoContainer">
-                    <Link to="/">
-                        <img  alt="logo" src={Logo} className="menuLogo"></img>
-                    </Link>
+                <div className="navBarContainer">
+                    <div className="logoContainer">
+                        <Link to="/">
+                                <img  alt="logo" src={Logo} className="menuLogo"></img>
+                        </Link>
+                    </div>
+                    <div className="topnav">
+                        <a href="#home" className="linkTo" >Inicio </a>
+                        <a href="#tech" className="linkTo">Tecnologías</a>
+                        <a  href="#experience" className="linkTo" >Experiencia</a>
+                        <a  href="#contacus" className="linkTo" >Contácto</a>
+                    </div>
                 </div>
-                <div className="topnav">
-                    <Link to="/" className="linkTo" >Inicio </Link>
-                    <a href="#tech" className="linkTo">Tecnologías</a>
-                    <a  href="#experience" className="linkTo" >Experiencia</a>
-                    <a  href="#contacus" className="linkTo" >Contácto</a>
-                </div>
+                
                 <Switch>
                     <Route exact path="/" component={HomeComponent} />
                     <Route exact path="/tech" component={TechComponent} />

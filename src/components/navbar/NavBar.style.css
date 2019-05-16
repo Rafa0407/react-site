@@ -1,3 +1,8 @@
+.navBarContainer {
+  position: sticky;
+  top: 0;
+  z-index: 10; }
+
 .topnav {
   right: 15px;
   list-style: none;
@@ -32,14 +37,15 @@
 .logoContainer {
   list-style: none;
   margin-left: 15px;
-  background: white;
+  background: transparent;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  position: absolute; }
+  position: fixed; }
 
 @media all and (max-width: 600px) {
   .topnav {
+    background: white;
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0; }
@@ -50,4 +56,8 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   .logoContainer {
     position: relative;
-    justify-content: center; } }
+    justify-content: center; }
+  .logoContainer {
+    margin-left: 0px; }
+  .navBarContainer {
+    position: relative; } }
