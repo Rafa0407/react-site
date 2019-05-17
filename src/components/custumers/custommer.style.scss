@@ -1,6 +1,6 @@
 .custommerSection{
         background-color: white; 
-        height: 100vh;
+        height: 80vh;
 }
 
 .custommerContainer{
@@ -9,6 +9,7 @@
     flex-flow: row wrap;
     justify-content: center;
     padding: 69px;
+    margin: auto;
 }
 
 .custommer-item{
@@ -46,13 +47,7 @@
     border-right: 0px solid #3e6aaf;  
 }
 
-/*@media all and (max-width: 600px) {
-    .custommerContainer {
-      -webkit-flex-flow: row wrap;
-      flex-flow: row wrap;
-      padding: 0;
-    }
-  }*/ 
+// MEDIA BREAKPOINTS.... 
   @media all and (max-width: 1265px) {
     .custommer-item {
         padding: 15px;
@@ -70,6 +65,7 @@
   @media all and (max-width: 1000px) {
     .custommerContainer{
         padding: 40px;
+        margin: auto;
     }
     .custommer-item {
         padding: 10px;
@@ -101,22 +97,93 @@
     }
   }
 
-  /*SLIDER STYLES*/
-  .sliderOnMobile{
-      display: none;
-  }
- 
   @media all and (max-width: 672px) {
-    .sliderOnMobile{
-        display: flex;
-    }
     .custommerContainer{
-        display: none;
+        padding: 65px;
+        margin: auto;
     }
-    .custommerImageSlide{
-        max-width: 100%;
-        width: 120px;
-        height: 100px;
+    .custommer-item {
         padding: 10px;
-      }
+        width: 87px;
+        height: 85px;
+    }
+    .custommerImage{
+        max-width: 100%;
+        width: 70px;
+        height: 50px;
+        padding: 20px;
+    }
+
+    .column1{
+        border: 1.1px solid #353f69;
+        border-top: 0px;   
+        border-bottom: 0px;   
+        border-right:  2.7px solid #353f69;   
+        border-left: 0px;     
+    }
+    .column2{
+        border: 1.1px solid #353f69;
+        border-bottom: 0px;   
+        border-top: 2.7px solid #353f69;
+        border-right:  2.7px solid #353f69;   
+        border-left: 0px;    
+    }
+    .column2 .custommerImage {
+        top: 10px;
+    }
+    .lasted{
+        border-right: 0px solid #3e6aaf;  
+    }
+  }
+
+   
+  @media all and (max-width: 564px) {
+    .custommerContainer{
+        padding: 65px;
+        margin: auto;
+    }
+    .custommer-item {
+        padding: 15px;
+        width: 70px;
+        height: 60px;
+    }
+    .custommerImage{
+        max-width: 100%;
+        width: 65px;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .column1{
+        border: 1.5px solid #353f69;   
+    }
+    .column2{
+        border: 1.5px solid #353f69;
+    }
+
+  }
+
+
+  @media all and (max-width: 335px) {
+    .custommerContainer{
+        padding: 65px;
+        margin: auto;
+    }
+    .custommer-item {
+        padding: 8px;
+        width: 65px;
+        height: 65px;
+    }
+    .custommerImage{
+        max-width: 100%;
+        width: 55px;
+        height: 35px;
+        padding: 0px;
+    }
+    .column1{
+        border: 0.1px solid #353f69;   
+    }
+    .column2{
+        border: 0.1px solid #353f69;
+    }
   }

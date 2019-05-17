@@ -55,35 +55,6 @@ class Custommers extends Component {
                         </li>
                     </ul>
                 </div>
-
-                <div className="sliderOnMobile">
-                    <CustomerSlider {...settings}>
-                        <div>
-                            <img alt={"costummerLogo"} className="custommerImageSlide" src={ alingnLogo }></img>
-                        </div>
-                        <div>
-                            <img alt={"costummerLogo"} className="custommerImageSlide" src={ bccrLogo }></img>
-                        </div>
-                        <div>
-                            <img alt={"costummerLogo"} className="custommerImageSlide" src={ coseviLogo }></img>
-                        </div>
-                        <div>
-                            <img alt={"costummerLogo"} className="custommerImageSlide" src={ mongeLogo }></img>
-                        </div>
-                        <div>
-                            <img alt={"costummerLogo"} className="custommerImageSlide" src={ mucapLogo }></img>
-                        </div>
-                        <div>
-                            <img alt={"costummerLogo"} className="custommerImageSlide" src={ esphLogo }></img>
-                        </div>
-                        <div>
-                            <img alt={"costummerLogo"} className="custommerImageSlide" src={ daviviendaLogo }></img>
-                        </div>
-                        <div>
-                            <img alt={"costummerLogo"} className="custommerImageSlide" src={ maycaLogo }></img>
-                        </div>
-                    </CustomerSlider>
-                </div>
             </section>
         );
     }
