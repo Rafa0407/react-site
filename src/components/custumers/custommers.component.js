@@ -1,5 +1,4 @@
 import React, {Component} from 'react'; 
-import CustomerSlider from "react-slick";
 import '../custumers/custommer.style.css'; 
 
 /* Cards images*/

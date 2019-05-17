@@ -8,7 +8,7 @@ import Slider from './slider/slider.component';
 import TechPreview from '../tech-preview/tech-preview.component';
 import Experience from '../experience/experience.component';
 import Custommers from '../custumers/custommers.component';
-
+import ContactUs from '../contact/contact.component'
 class HomeComponent extends Component {
   render() {
     return (
@@ -17,6 +17,7 @@ class HomeComponent extends Component {
             <TechPreview />
             <Experience />
             <Custommers />
+            <ContactUs />
           </div>
     )
   }
