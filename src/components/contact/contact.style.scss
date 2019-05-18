@@ -11,7 +11,6 @@
     margin: auto;
     padding: 70px;
 }
-
 .contactHeader h1{
     margin: auto;
     font-size: 3em;
@@ -28,7 +27,6 @@
     }
 
 }
-
 .contact-form{
     display: flex;
     flex-flow: column;
@@ -37,7 +35,6 @@
     width: 40vw;
     margin: auto;
 }
-
 .messageInput {
     margin: auto;
     width: 360px;
@@ -47,7 +44,6 @@
 }
 .contact-form > .inputContainer{
     background-color: #e0e0e0;
-    // height: 25px;
     border: none;
     padding: .5em 1em .5em 0;
     flex: 1;
@@ -57,8 +53,6 @@
     padding: .5em 1em .5em 0;
     flex: 1;
 }
-
-
 .FormButton-container{
     flex-flow: row wrap;
     text-align: center;

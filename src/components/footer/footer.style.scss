@@ -1,0 +1,55 @@
+
+// Footer 
+.teamFooter{
+    background-color: #3e6aaf;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 30vh;
+    justify-content: center;
+    margin: auto;
+}
+.footerImageContainer{
+    width: 40vw;
+    position: relative;
+    margin: auto;
+    top: 80px;
+    .footerImage{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        // bottom: 320px;
+    }
+}
+.footerLogoContainer{
+    width: 8vw;
+    height: 10vh;
+    // bottom: 379px;
+    .vinetLogo{
+        max-width: 100%; 
+        width: auto;
+        height: auto;
+        // bottom: 379px;
+        // position: relative;
+    }
+    .year {
+        font-weight: bold;
+        position: relative;
+        color: white;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .teamFooter{
+        width: 104vw;
+    }
+    .footerImageContainer{
+        width: 70vw;
+      }
+
+    .footerLogoContainer{
+        width: 19vw;
+        height: 10vh;
+    }
+}
