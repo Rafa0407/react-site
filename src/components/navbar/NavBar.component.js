@@ -27,7 +27,7 @@ class NavBar extends Component {
                         <a href="#home" className="linkTo" >Inicio </a>
                         <a href="#tech" className="linkTo">Tecnologías</a>
                         <a  href="#experience" className="linkTo" >Experiencia</a>
-                        <a  href="#contacus" className="linkTo" >Contácto</a>
+                        <a  href="#contactus" className="linkTo" >Contácto</a>
                     </div>
                 </div>
                 

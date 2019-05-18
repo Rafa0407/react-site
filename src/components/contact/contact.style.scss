@@ -1,22 +1,68 @@
 .contacUsSection{
     height: 100vh;
-    background: cadetblue;
+    background-color: #f6f6f6; 
 }
+.contactHeader{
+    display: flex;
+    flex-flow: row;
+    max-width: 100%;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    padding: 70px;
+}
+
+.contactHeader h1{
+    margin: auto;
+    font-size: 3em;
+} 
+
+.contactFormContainer{
+    justify-content: center;
+    display: flex;
+    .formContainer{
+        flex-basis: 60%;
+    }
+    .contactsContainer{
+        flex-basis: 40%;
+    }
+
+}
+
 .contact-form{
-    display: flex; 
+    display: flex;
     flex-flow: column;
-    width: 40%;
+    justify-content: flex-end;
+    padding: .5em;
+    width: 40vw;
     margin: auto;
 }
 
 .messageInput {
     margin: auto;
-    width: 603px;
+    width: 360px;
     height: 120px;
+    background-color: #e0e0e0;
+    border: none;
 }
+.contact-form > .inputContainer{
+    background-color: #e0e0e0;
+    // height: 25px;
+    border: none;
+    padding: .5em 1em .5em 0;
+    flex: 1;
+}
+.contact-form > .inputLabel{
+    font-size: 1.4em;
+    padding: .5em 1em .5em 0;
+    flex: 1;
+}
+
+
 .FormButton-container{
     flex-flow: row wrap;
     text-align: center;
+    margin-top: 10px;
     .Formbutton{
           background-color: #3e6aaf; 
           border: none;
@@ -29,4 +75,71 @@
           width: auto; 
           height: auto,
       }     
+  }
+
+  .contactsContainer h1{
+      font-size: 3em;
+  }
+  .contactItem{
+      max-width: 100%;
+      width: 40vw;
+  }
+
+  @media all and (max-width: 796px) {
+    .contactHeader{
+        padding: 30px;
+    }
+    .FormButton-container {
+        .Formbutton{
+            font-size: 0.8em;
+            max-width: 100%;
+            width: auto; 
+            height: 5vh,
+        }
+    }
+    .contactItem h1{
+        font-size: 2em;
+    }
+    .contactItem p{
+        font-size: 0.7em;
+    }
+  }
+
+  @media all and (max-width: 500px) {
+
+    .contactFormContainer{
+        flex-flow: column;
+    }
+    .contactHeader{
+        padding: 0px;
+    }
+    .contactHeader h1{
+        font-size: 2em;
+    }
+    .contact-form > .inputLabel {
+        font-size: 1em;
+    }
+    .FormButton-container {
+        .Formbutton{
+            padding: 15px 32px;
+            font-size: 0.8em;
+            max-width: 100%;
+            width: auto; 
+            height: 8vh,
+        }
+    }
+    .contactsContainer {
+        display: flex;
+        flex-basis: 40%;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .contactItem h1{
+        margin: auto;
+        font-size: 1.5em;
+    }
+    .contactItem p{
+        font-size: 0.5em;
+    }
   }

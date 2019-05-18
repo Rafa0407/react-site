@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Column, Row } from 'simple-flexbox'; 
 
 /*Styles*/
 import '../contact/contact.style.css';
@@ -59,28 +58,48 @@ class Contact extends Component {
   render() {
 
   return (
-        <section className="contacUsSection">
+        <section className="contacUsSection" id="contactus">
+              <div className="contactHeader"> 
+                  <h1>Hablemos</h1> 
+            </div>
           <div className="contactFormContainer" >
-              <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
-                  <label class="message-name" htmlFor="message-name">Nombre</label>
-                  <input onChange={e => this.setState({ name: e.target.value})} name="name" class="message-name" type="text" placeholder="Su nombre" required value={this.state.name}/>
+                  <div className="formContainer">
+                    <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
+                        
+                        <label className="inputLabel" htmlFor="message-name">Nombre</label>
+                        <input onChange={e => this.setState({ name: e.target.value})} name="name" className="inputContainer" type="text" maxlength="10" placeholder="Su nombre" required value={this.state.name}/>
 
-                  <label class="message-name" htmlFor="message-phone">Teléfono</label>
-                  <input onChange={e => this.setState({ phone: e.target.value})} name="phone" class="message-name" type="text" placeholder="Su teléfono" required value={this.state.phone}/>
+                        <label className="inputLabel" htmlFor="message-phone">Teléfono</label>
+                        <input onChange={e => this.setState({ phone: e.target.value})} name="phone" className="inputContainer" type="text" maxlength="8" placeholder="Su teléfono" required value={this.state.phone}/>
 
-                  <label class="message-email" htmlFor="message-email">Email</label>
-                  <input onChange={(e) => this.setState({ email: e.target.value})} name="email" class="message-email" type="email" placeholder="your@email.com" required value={this.state.email} />
+                        <label className="inputLabel" htmlFor="message-email">Email</label>
+                        <input onChange={(e) => this.setState({ email: e.target.value})} name="email" className="inputContainer" type="email" maxlength="25" placeholder="your@email.com" required value={this.state.email} />
 
-                  <label class="message-name" htmlFor="message-company">Empresa</label>
-                  <input onChange={e => this.setState({ companyName: e.target.value})} name="companyName" class="message-name" type="text" placeholder="Nombre empresa"  value={this.state.companyName}/>
+                        <label className="inputLabel" htmlFor="message-company">Empresa</label>
+                        <input onChange={e => this.setState({ companyName: e.target.value})} name="companyName" className="inputContainer" type="text" maxlength="25" placeholder="Nombre empresa"  required value={this.state.companyName}/>
 
-                  <label className="messageInput" htmlFor="message-input">Your Message</label>
-                  <textarea onChange={e => this.setState({ message: e.target.value})} name="message" class="message-input" type="text" placeholder="¡Escribe tu mensaje!" value={this.state.message} required/>
+                        <label  className="inputLabel" htmlFor="message-input">Mensaje</label>
+                        <textarea onChange={e => this.setState({ message: e.target.value})} name="message" className="inputContainer" type="text" maxlength="400" placeholder="¡Escribe tu mensaje!" required value={this.state.message} />
 
-                  <div className="FormButton-container">
-                  <button type="submit" className="Formbutton">{ this.state.buttonText }</button>
+                        <div className="FormButton-container">
+                        <button type="submit" className="Formbutton">{ this.state.buttonText }</button>
+                        </div>
+                    </form>
                   </div>
-              </form>
+                  <div onMedium="row" className="contactsContainer">
+                    <div className="contactItem">
+                      <h1>Costa Rica</h1>
+                      <p>+(506) 2234 2682</p>
+                      <p>contacto@vinet.co.cr </p>
+                      <p>Curridabat, Costa Rica.</p>
+                    </div>
+                    <div className="contactItem">
+                      <h1>Nicaragua</h1>
+                      <p>+(505) 2251 6327</p>
+                      <p>contacto@vinet.co.cr</p>
+                      <p>Managua, Nicaragua.</p>
+                    </div>
+                  </div>
           </div>
         </section>
         
