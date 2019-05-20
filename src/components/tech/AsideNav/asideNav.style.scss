@@ -1,0 +1,27 @@
+.asideContainer{
+    display: flex;
+    flex-basis: 20%;
+    background: #f74f68;
+    justify-content: center;
+
+}
+.asideNav {
+    display: flex; 
+    flex-flow: column;
+    margin-top: 20px;
+}
+.asideItems{
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.asideItems p {
+    text-decoration: none;
+}
+.asideImage {
+    height: 50px;
+    width: 55px;
+}

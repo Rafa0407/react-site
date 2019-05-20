@@ -4,13 +4,16 @@ import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 /*Style imports*/
 import '../navbar/NavBar.style.css';
-import HomeComponent from "../home/home.component";
-import ContactComponent from '../contact/contact.component';
-import ExperienceComponent from '../experience/experience.component';
-import TechComponent from '../tech/technologies.component';
-import notFound from '../notFound/notFound.component'
 
-/*External impots*/
+/*Components*/
+import HomeComponent from "../home/home.component";
+import TechComponent from '../tech/tech/technologies.component';
+import notFound from '../notFound/notFound.component'; 
+
+
+
+
+/*External imports*/
 import Logo from '../../../public/images/Logo1.png'
 
 class NavBar extends Component {
@@ -30,17 +33,13 @@ class NavBar extends Component {
                         <a  href="#contactus" className="linkTo" >Contácto</a>
                     </div>
                 </div>
-                
                 <Switch>
                     <Route exact path="/" component={HomeComponent} />
-                    <Route exact path="/tech" component={TechComponent} />
+                    <Route path="/tech" component={TechComponent} />
                     <Route component={notFound} />
                 </Switch>
             </Router>
-
         );
     }
-
 };
-
 export default NavBar;

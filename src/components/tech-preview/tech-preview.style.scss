@@ -1,7 +1,8 @@
 .techPreviewSection{
     background-color: #f74f69; 
     margin-top: 25px;
-    height: 100vh;
+    // height: 100vh;
+    display: flex; // preguntar como lo prefiere
 }
 .techContainer{
     list-style: none;

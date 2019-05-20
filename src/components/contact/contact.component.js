@@ -67,10 +67,10 @@ class Contact extends Component {
                     <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
                         
                         <label className="inputLabel" htmlFor="message-name">Nombre</label>
-                        <input onChange={e => this.setState({ name: e.target.value})} name="name" className="inputContainer" type="text" maxlength="10" placeholder="Su nombre" required value={this.state.name}/>
+                        <input onChange={e => this.setState({ name: e.target.value})} name="name" className="inputContainer" type="text" maxlength="20" placeholder="Su nombre" required value={this.state.name}/>
 
                         <label className="inputLabel" htmlFor="message-phone">Teléfono</label>
-                        <input onChange={e => this.setState({ phone: e.target.value})} name="phone" className="inputContainer" type="text" maxlength="8" placeholder="Su teléfono" required value={this.state.phone}/>
+                        <input onChange={e => this.setState({ phone: e.target.value})} name="phone" className="inputContainer" type="text" maxlength="10" placeholder="Su teléfono" required value={this.state.phone}/>
 
                         <label className="inputLabel" htmlFor="message-email">Email</label>
                         <input onChange={(e) => this.setState({ email: e.target.value})} name="email" className="inputContainer" type="email" maxlength="25" placeholder="your@email.com" required value={this.state.email} />

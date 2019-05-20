@@ -1,5 +1,6 @@
 .contacUsSection{
-    height: 100vh;
+    display: flex;
+    flex-flow: column;
     background-color: #f6f6f6; 
 }
 .contactHeader{
@@ -32,7 +33,7 @@
     flex-flow: column;
     justify-content: flex-end;
     padding: .5em;
-    width: 40vw;
+    width: 25vw;
     margin: auto;
 }
 .messageInput {
@@ -109,6 +110,9 @@
     }
     .contactHeader h1{
         font-size: 2em;
+    }
+    .contact-form{
+        width: 50vw;
     }
     .contact-form > .inputLabel {
         font-size: 1em;

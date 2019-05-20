@@ -14,16 +14,6 @@ import maycaLogo from '../../../public/images/logo-mayca.png';
 class Custommers extends Component {
 
     render(){
-
-        const settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1, 
-            fade: true,
-            adaptiveHeight: true
-          };
         return(
             <section className="custommerSection">
                 <div>
