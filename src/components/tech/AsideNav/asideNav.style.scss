@@ -10,6 +10,12 @@
     flex-flow: column;
     margin-top: 20px;
 }
+
+.asideBtn{
+    background: none;
+    border: none; 
+    cursor: pointer;
+}
 .asideItems{
     list-style: none;
     display: flex;
