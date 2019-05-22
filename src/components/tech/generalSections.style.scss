@@ -1,0 +1,142 @@
+.techSectionContainer{
+    margin-top: 15px;
+    display: flex; 
+    flex-flow: column;
+    align-items: center;
+    width: 80vw;
+}
+.techSectionVideoContainer{
+    width: 45vw;
+    // height: 55vh;
+    margin-top: 10px;
+    .techSectionVideo{
+        width: 100%;
+        height: 390px;
+    }
+}
+.techSectionHeader{
+    display: flex; 
+    flex-flow: row;
+    justify-content: center;
+}
+
+.techSectionHeaderImage{
+    max-width: 100%;
+    width: 100px;
+    height: 100px; 
+    flex-basis: 20%; 
+    .techSectionHeaderLogo{
+        width: 100px; 
+        height: 100px;
+    }
+}
+.techSectionHeaderText{
+    flex-basis: 45%;
+    background-color: #e0e0e0; 
+}
+.techSectionHeaderText h1 p {
+    margin: 0px;
+    
+}
+.techSectionHeaderText h1{
+    font-weight: lighter;
+    font-size: 3em;
+    margin: 0px;
+}
+
+
+.techSectionContent{
+    margin-top: 15px;
+    flex-basis: 60%;
+    width: 45vw;
+}
+
+.techSectionContent .techSectionText{
+    padding-left: 30px;
+}
+
+// media query 
+
+// 1000 px large devices 
+@media all and (max-width: 1000px) {
+    .techSectionHeaderText h1{
+        font-size: 2.5em;
+    }
+    .techSectionVideoContainer .techSectionVideo {
+        height: 265px;
+    }
+    .techSectionContent {
+        width: 50vw;
+    }
+
+}
+// 800 px medium devices
+@media all and (max-width: 800px) {
+    .techSectionHeaderText h1{
+        font-size: 2.3em;
+    }
+    .techSectionVideoContainer  {
+        width: 55vw;
+    }
+    .techSectionVideoContainer .techSectionVideo {
+        height: 250px;
+    }
+    .techSectionContent {
+        width: 50vw;
+    }
+    .techSectionContent .techSectionText{
+        padding-left: 15px;
+    }
+
+} 
+// 600 px small devices 
+@media all and (max-width: 600px) {
+    .techSectionHeader {
+        flex-flow: column;
+        align-items: center;
+    }
+    .techSectionHeaderText {
+        text-align: center;
+        flex-basis: 47%;
+    }
+    .techSectionHeaderText h1{
+        font-size: 2.4em;
+    }
+    .techSectionVideoContainer {
+        width: 65vw;
+    }
+    .techSectionVideoContainer .techSectionVideo {
+        height: 220px;
+    }
+    .techSectionContent {
+        width: 50vw;
+    }
+
+}
+// 400 px xsmall devices 
+@media all and (max-width: 400px) {
+    .techSectionHeader {
+        flex-flow: column;
+        align-items: center;
+    }
+    .techSectionHeaderText {
+        text-align: center;
+        flex-basis: 47%;
+    }
+    .techSectionHeaderText h1{
+        font-size: 2.4em;
+    }
+    .techSectionVideoContainer {
+        width: 70vw;
+    }
+    .techSectionVideoContainer .techSectionVideo {
+        height: 166px;
+    }
+    .techSectionContent {
+        width: 70vw;
+    }
+    .techSectionContent h1{
+        font-size: 1.4em;
+    }
+
+}

@@ -3,7 +3,6 @@ import AsideNav from  '../AsideNav/asideNav';
 
 import '../tech/technologies.style.css';
 
-
 class Technologies extends Component {
   render() {
     return (

@@ -18,43 +18,43 @@ class TechPreview extends Component {
                 image: redes,
                 title: "Redes",
                 pharagrap: "Basadas en intención y creadas a partir de Cisco DNA.",
-                cardLink: "/tech"
+                cardLink: "/tech/security"
             },
             {
                 image: seguridad,
                 title: "Seguridad",
                 pharagrap: "Detecte y detenga las amenazas de manera más eficaz con nuestros productos de ciberseguridad.",
-                cardLink: "/tech"
+                cardLink: "/tech/security"
             },
             {
                 image: nube,
                 title: "Nube",
                 pharagrap: "Posibilite un mundo multinube.",
-                cardLink: "/tech"
+                cardLink: "/tech/security"
             },
             {
                 image: consultoria,
                 title: "Consultoría avanzada",
                 pharagrap: "Posibilite un mundo multinube.",
-                cardLink: "/tech"
+                cardLink: "/tech/colaboration"
             },
             {
                 image: colaboracion,
                 title: "Colaboración",
                 pharagrap: "Las nuevas innovaciones que cambian la forma en que colaboran los equipos",
-                cardLink: "/tech"
+                cardLink: "/tech/security"
             },
             {
                 image: datos,
                 title: "Centro de datos",
                 pharagrap: "Activado por metas. Informado por contexto. Proporcionado en múltiples nubes.",
-                cardLink: "/tech"
+                cardLink: "/tech/security"
             },
             {
                 image: redesInhalambricas,
                 title: "Redes inalámbricas y movilidad",
                 pharagrap: "Viaje al pasado con DNA Center Assurance.",
-                cardLink: "/tech"
+                cardLink: "/tech/security"
             }
         ]
         return (

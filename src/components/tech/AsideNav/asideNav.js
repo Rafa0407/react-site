@@ -6,6 +6,7 @@ import './asideNav.style.css';
 /*Components*/ 
 
 import Security from '../security/security.component'; 
+import Colaboration from '../colaboration/colaboration.component';
 
 /*Images*/
 import redes from '../../../../public/images/logo-world.png';
@@ -16,34 +17,11 @@ import colaboracion from '../../../../public/images/logo-de-manos.png';
 import datos from '../../../../public/images/logo-de-unidad.png';
 import redesInhalambricas from '../../../../public/images/logo-de-señal.png'; 
 import logo from '../../../../public/images/logo-2.png'; 
+ 
+// Component 
 
 class AsideNav extends Component {
-    constructor(props) {
-        super(props);
-        this.showNav = this.showNav.bind(this);
-      }
-      display = false; 
-      showNav(){
-          console.log(this.display); 
-          console.log('clicked!'); 
-          this.display = true; 
-          console.log(this.display);
-    }
     render(){
-        let navBarContainer = {
-            display: 'none'
-        };
-
-        if(this.display = true){
-            navBarContainer = {
-                display: 'none'
-            };
-        }
-        else {
-            navBarContainer = {
-                display: 'none'
-            };
-        }
         return(
             <Router>
                 <div className="asideContainer">
@@ -66,7 +44,7 @@ class AsideNav extends Component {
                                 <p>Nube</p>
                             </div>
                         </Link> 
-                        <Link to="/tech/security">
+                        <Link to="/tech/colaboration">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={colaboracion}></img>
                                 <p>Colaboración</p>
@@ -100,6 +78,7 @@ class AsideNav extends Component {
                 </div>
                 <Switch>   
                     <Route path={"/tech/security"} component={Security} />
+                    <Route path={"/tech/colaboration"} component={Colaboration} />
                 </Switch>
             </Router>
         );

@@ -35,7 +35,7 @@ class NavBar extends Component {
                 </div>
                 <Switch>
                     <Route exact path="/" component={HomeComponent} />
-                    <Route path="/tech" component={TechComponent} />
+                    <Route path="/tech/security" component={TechComponent} />
                     <Route component={notFound} />
                 </Switch>
             </Router>
