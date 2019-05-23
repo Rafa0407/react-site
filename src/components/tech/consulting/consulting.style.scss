@@ -1,0 +1,78 @@
+.consultingSectionHeader{
+    display: flex; 
+    flex-flow: row;
+    justify-content: center;
+    flex-basis: 20%;
+    width: 65vw;
+}
+
+.consultingHeaderImage{
+    max-width: 100%;
+    width: 100px;
+    height: 152px;
+    flex-basis: 20%;
+    .consultingHeaderLogo{
+        width: 160px;
+        height: 150px;
+    }
+}
+
+.consultingIconsContainer{
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: center;
+    width: 45%;
+    padding: 30px;
+
+}
+.consultingIconInfo{
+    display: flex;
+    flex-flow: column;
+    flex-basis: 50%;
+    align-items: center;
+}
+
+.consultingIconInfo p{  
+    text-align: center;
+    width: 185px;
+    font-size: 1.5em;
+}
+
+.consultingIcon{
+    width: 58px;
+    height: 62px;
+}
+
+.consultingHeaderText{
+    display: flex;
+    flex-basis: 70%;
+    background-color: #e0e0e0;
+    text-align: center;
+    align-items: center;
+}
+.consultingHeaderText h1{
+    font-size: 3em;
+    margin: auto;
+    font-weight: lighter;
+}
+
+
+@media all and (max-width: 1000px) {
+    .consultingSectionHeader{
+        display: flex; 
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .consultingHeaderImage{
+        max-width: 100%;
+        width: 145px;
+        height: 152px;
+        flex-basis: 20%;
+        .consultingHeaderLogo{
+            width: 150px;
+            height: 140px;
+        }
+    }
+}

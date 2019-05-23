@@ -18,7 +18,7 @@ class TechPreview extends Component {
                 image: redes,
                 title: "Redes",
                 pharagrap: "Basadas en intención y creadas a partir de Cisco DNA.",
-                cardLink: "/tech/security"
+                cardLink: "/tech/network"
             },
             {
                 image: seguridad,
@@ -30,31 +30,31 @@ class TechPreview extends Component {
                 image: nube,
                 title: "Nube",
                 pharagrap: "Posibilite un mundo multinube.",
-                cardLink: "/tech/security"
+                cardLink: "/tech/cloud"
             },
             {
                 image: consultoria,
                 title: "Consultoría avanzada",
                 pharagrap: "Posibilite un mundo multinube.",
-                cardLink: "/tech/colaboration"
+                cardLink: "/tech/consulting"
             },
             {
                 image: colaboracion,
                 title: "Colaboración",
                 pharagrap: "Las nuevas innovaciones que cambian la forma en que colaboran los equipos",
-                cardLink: "/tech/security"
+                cardLink: "/tech/colaboration"
             },
             {
                 image: datos,
-                title: "Centro de datos",
+                title: "Centro de redes",
                 pharagrap: "Activado por metas. Informado por contexto. Proporcionado en múltiples nubes.",
-                cardLink: "/tech/security"
+                cardLink: "/tech/networkCenter"
             },
             {
                 image: redesInhalambricas,
                 title: "Redes inalámbricas y movilidad",
                 pharagrap: "Viaje al pasado con DNA Center Assurance.",
-                cardLink: "/tech/security"
+                cardLink: "/tech/wirlessNetwork"
             }
         ]
         return (

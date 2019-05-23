@@ -1,0 +1,25 @@
+.wirlessHeaderImage{
+    max-width: 100%;
+    width: 100px;
+    height: 100px; 
+    flex-basis: 15%; 
+    .wirlessHeaderLogo{
+        width: 100px; 
+        height: 100px;
+    }
+}
+
+.wirlessHeaderText{
+    flex-basis: 40%;
+    background-color: #e0e0e0; 
+    text-align: center;
+}
+.wirlessHeaderText p {
+    margin: 0px;
+    
+}
+.wirlessHeaderText h1{
+    font-size: 2em;
+    margin: 0px;
+    font-weight: lighter;
+}

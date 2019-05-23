@@ -25,9 +25,26 @@
     
 }
 .asideItems p {
-    text-decoration: none;
+    color: #364066;
+    text-align: center;
 }
 .asideImage {
-    height: 50px;
-    width: 55px;
+    height: 60px;
+    width: 65px;
 }
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }

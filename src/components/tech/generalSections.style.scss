@@ -31,17 +31,18 @@
     }
 }
 .techSectionHeaderText{
-    flex-basis: 45%;
+    flex-basis: 80%;
     background-color: #e0e0e0; 
+    text-align: center;
 }
-.techSectionHeaderText h1 p {
+.techSectionHeaderText p {
     margin: 0px;
     
 }
 .techSectionHeaderText h1{
-    font-weight: lighter;
     font-size: 3em;
     margin: 0px;
+    font-weight: lighter;
 }
 
 
@@ -49,6 +50,13 @@
     margin-top: 15px;
     flex-basis: 60%;
     width: 45vw;
+    p{
+        line-height: 25px;
+    }
+    ul li {
+        padding: 5px 0px;
+        margin-left: 15px;
+    }
 }
 
 .techSectionContent .techSectionText{
@@ -59,6 +67,9 @@
 
 // 1000 px large devices 
 @media all and (max-width: 1000px) {
+    .techSectionHeaderText {
+        flex-basis: 55%;
+    }
     .techSectionHeaderText h1{
         font-size: 2.5em;
     }
