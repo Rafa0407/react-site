@@ -6,16 +6,25 @@ import NavBar from './components/navbar/NavBar.component' ;
 import TechComponent from './components/tech/techContainer.component';
 
 class App extends Component {
-     
   render() {
-    return (
-      <div className="App">
-        {
-          this.props.location.pathname == '/' ? <NavBar /> : <TechComponent />
-        }
-      </div>
-    );
+      if(this.props.location.pathname === '/'){
+        return(
+          <NavBar />
+        );
+      }
+      else{
+          return(
+            <TechComponent />  
+          );
+      }
   }
 }
 
 export default withRouter(App);
+/*return (
+  <div className="App">
+    {
+      this.props.location.pathname == '/' ? <NavBar /> : <TechComponent />
+    }
+  </div>
+);*/

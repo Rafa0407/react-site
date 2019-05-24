@@ -85,6 +85,12 @@
         .cardContainer{
           height: 80vh;
           flex-flow: column !important; 
+          .buttomContainer{
+            cursor: pointer;
+            flex-basis: 40%;
+            align-content: center;
+            margin-bottom: 0px;
+          }
         }
         .imageContainer{
           flex-basis: 47% !important;
@@ -96,9 +102,5 @@
           height: 65vh !important;
           bottom: 35px;
         }
-        .buttomContainer{
-          flex-basis: 40%;
-          align-content: center;
-          margin-bottom: 0px;
-        }
+
       }

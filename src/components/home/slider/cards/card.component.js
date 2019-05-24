@@ -6,10 +6,6 @@ import '../cards/card.style.css';
 
 
 class Card extends Component {
-  constructor(props){
-    super(props);
-  }
-
   render() {
     return (
       <div>
@@ -17,7 +13,7 @@ class Card extends Component {
           <Column alignItems='center' className="buttomContainer">
            <div>
               <p  className="textInfo">{ this.props.card.slideParagraph }</p>
-              <a href= { this.props.card.linkTo }  className="btn">{ this.props.card.btnText }</a>
+              <a href={ this.props.card.linkTo }  className="btn">{ this.props.card.btnText }</a>
            </div>
           </Column>
           <Column alignItems='center' className="imageContainer">

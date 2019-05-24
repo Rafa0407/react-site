@@ -5,9 +5,6 @@ import axios from 'axios';
 import '../contact/contact.style.css';
 
 class Contact extends Component {
-  constructor(props) {
-    super(props)
-  }
   state = {
     name: '',
     phone: '',
@@ -67,26 +64,26 @@ class Contact extends Component {
                     <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
                         
                         <label className="inputLabel" htmlFor="message-name">Nombre</label>
-                        <input onChange={e => this.setState({ name: e.target.value})} name="name" className="inputContainer" type="text" maxlength="20" placeholder="Su nombre" required value={this.state.name}/>
+                        <input onChange={e => this.setState({ name: e.target.value})} name="name" className="inputContainer" type="text" maxLength="20" placeholder="Su nombre" required value={this.state.name}/>
 
                         <label className="inputLabel" htmlFor="message-phone">Teléfono</label>
-                        <input onChange={e => this.setState({ phone: e.target.value})} name="phone" className="inputContainer" type="text" maxlength="10" placeholder="Su teléfono" required value={this.state.phone}/>
+                        <input onChange={e => this.setState({ phone: e.target.value})} name="phone" className="inputContainer" type="text" maxLength="10" placeholder="Su teléfono" required value={this.state.phone}/>
 
                         <label className="inputLabel" htmlFor="message-email">Email</label>
-                        <input onChange={(e) => this.setState({ email: e.target.value})} name="email" className="inputContainer" type="email" maxlength="25" placeholder="your@email.com" required value={this.state.email} />
+                        <input onChange={(e) => this.setState({ email: e.target.value})} name="email" className="inputContainer" type="email" maxLength="25" placeholder="your@email.com" required value={this.state.email} />
 
                         <label className="inputLabel" htmlFor="message-company">Empresa</label>
-                        <input onChange={e => this.setState({ companyName: e.target.value})} name="companyName" className="inputContainer" type="text" maxlength="25" placeholder="Nombre empresa"  required value={this.state.companyName}/>
+                        <input onChange={e => this.setState({ companyName: e.target.value})} name="companyName" className="inputContainer" type="text" maxLength="25" placeholder="Nombre empresa"  required value={this.state.companyName}/>
 
                         <label  className="inputLabel" htmlFor="message-input">Mensaje</label>
-                        <textarea onChange={e => this.setState({ message: e.target.value})} name="message" className="inputContainer" type="text" maxlength="400" placeholder="¡Escribe tu mensaje!" required value={this.state.message} />
+                        <textarea onChange={e => this.setState({ message: e.target.value})} name="message" className="inputContainer" type="text" maxLength="400" placeholder="¡Escribe tu mensaje!" required value={this.state.message} />
 
                         <div className="FormButton-container">
                         <button type="submit" className="Formbutton">{ this.state.buttonText }</button>
                         </div>
                     </form>
                   </div>
-                  <div onMedium="row" className="contactsContainer">
+                  <div className="contactsContainer">
                     <div className="contactItem">
                       <h1>Costa Rica</h1>
                       <p>+(506) 2234 2682</p>

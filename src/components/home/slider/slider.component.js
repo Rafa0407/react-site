@@ -45,15 +45,14 @@ class SlideShow extends Component {
         var settings = {
             dots: true,
             infinite: true,
-            speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
             adaptiveHeight: true,
-            // autoplay: true,  /*properties for autoplay slideshow, uncomment until work´is fine*/
-            // speed: 2000,
-            // autoplaySpeed: 2000,
-            // pauseOnHover: true,
+            autoplay: true,  /*properties for autoplay slideshow, uncomment until work´is fine*/
+            speed: 1000,
+            autoplaySpeed: 4000,
+            pauseOnHover: true,
           }; 
           
         return (

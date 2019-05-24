@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { NavLink , BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './asideNav.style.css'; 
 
 /*Components*/ 
-
 import Security from '../security/security.component'; 
 import Colaboration from '../colaboration/colaboration.component';
 import Cloud from '../cloud/cloud.component';
@@ -12,6 +11,7 @@ import NetworkCenter from '../networkCenter/networkCenter.component';
 import WirelessNetwork from '../wirelessNetwork/wirelessNetwork.component';
 import Consulting from '../consulting/consulting.component';
 import Network from '../netwotk/network.component'; 
+import notFound from '../../notFound/notFound.component'; 
 
 /*Images*/
 import redes from '../../../../public/images/logo-world.png';
@@ -35,48 +35,48 @@ class AsideNav extends Component {
                                 <p>Inicio</p>
                             </div>
                         </a > 
-                        <Link to="/tech/security">
+                        <NavLink activeClassName="active" to="/tech/security">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={seguridad}></img>
-                                <p>Security</p>
+                                <p> Seguridad </p>
                             </div>
-                        </Link> 
-                        <Link to="/tech/cloud">
+                        </NavLink> 
+                        <NavLink activeClassName="active" to="/tech/cloud">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={nube}></img>
                                 <p>Nube</p>
                             </div>
-                        </Link> 
-                        <Link to="/tech/colaboration">
+                        </NavLink> 
+                        <NavLink activeClassName="active" to="/tech/colaboration">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={colaboracion}></img>
                                 <p>Colaboración</p>
                             </div>
-                        </Link> 
-                        <Link to="/tech/networkCenter">
+                        </NavLink> 
+                        <NavLink activeClassName="active" to="/tech/networkCenter">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={datos}></img>
                                 <p>Centro de redes</p>
                             </div>
-                        </Link> 
-                        <Link to="/tech/wirlessNetwork">
+                        </NavLink> 
+                        <NavLink activeClassName="active" to="/tech/wirlessNetwork">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={redesInhalambricas}></img>
                                 <p>Redes inhalambricas</p>
                             </div>
-                        </Link> 
-                        <Link to="/tech/network">
+                        </NavLink> 
+                        <NavLink activeClassName="active" to="/tech/network">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={redes}></img>
-                                <p>Redes</p> 
+                                <p>Redes</p>
                             </div>
-                        </Link> 
-                        <Link to="/tech/consulting">
+                        </NavLink> 
+                        <NavLink activeClassName="active" to="/tech/consulting">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={consultoria}></img>
-                                <p>Consultoria</p>  
+                                <p>Consultoria</p> 
                             </div>
-                        </Link> 
+                        </NavLink> 
                     </div>
                 </div>
                 <Switch>   
@@ -87,7 +87,7 @@ class AsideNav extends Component {
                     <Route path={"/tech/wirlessNetwork"} component={WirelessNetwork} />
                     <Route path={"/tech/consulting"} component={Consulting} />
                     <Route path={"/tech/network"} component={Network} />
-
+                    <Route component={notFound} />
                 </Switch>
             </Router>
         );

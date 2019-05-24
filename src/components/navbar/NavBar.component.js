@@ -1,13 +1,13 @@
 /*Core imports */
 import React, { Component } from 'react';
-import { Link, BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Link, BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom'
 
 /*Style imports*/
 import '../navbar/NavBar.style.css';
 
 /*Components*/
 import HomeComponent from "../home/home.component";
-import TechComponent from '../tech/tech/technologies.component';
+import TechComponent from '../tech/techContainer.component';
 import notFound from '../notFound/notFound.component'; 
 
 
@@ -29,17 +29,25 @@ class NavBar extends Component {
                     <div className="topnav">
                         <a href="#home" className="linkTo" >Inicio </a>
                         <a href="#tech" className="linkTo">Tecnologías</a>
-                        <a  href="#experience" className="linkTo" >Experiencia</a>
-                        <a  href="#contactus" className="linkTo" >Contácto</a>
+                        <a href="#experience" className="linkTo" >Experiencia</a>
+                        <a href="#contactus" className="linkTo" >Contácto</a>
                     </div>
                 </div>
                 <Switch>
                     <Route exact path="/" component={HomeComponent} />
-                    <Route path="/tech/security" component={TechComponent} />
+                    <Route path="/tech" component={TechComponent} />
                     <Route component={notFound} />
                 </Switch>
             </Router>
         );
     }
 };
-export default NavBar;
+export default withRouter(NavBar);
+
+
+/* 
+<a href={`${this.props.location.pathname}#home`} className="linkTo" >Inicio </a>
+                        <a href={`${this.props.location.pathname}#tech`} className="linkTo">Tecnologías</a>
+                        <a href={`${this.props.location.pathname}#experience`} className="linkTo" >Experiencia</a>
+                        <a href={`${this.props.location.pathname}#contactus`} className="linkTo" >Contácto</a>
+*/

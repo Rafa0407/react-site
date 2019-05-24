@@ -6,10 +6,6 @@ import '../tech-card/tech-card.style.css';
 
 
 class TechCard extends Component {
-  constructor(props){
-    super(props);
-  }
-
   render() {
     return (
         <div>

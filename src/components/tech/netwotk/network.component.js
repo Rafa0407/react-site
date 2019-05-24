@@ -26,7 +26,7 @@ class Network extends Component {
                 </div>
 
                 <div className="videoImageContainer">
-                    <a target="_blank" href="https://www.cisco.com/c/en/us/solutions/enterprise-networks/dna-difference.html">
+                    <a target="_blank" href="https://www.cisco.com/c/es_mx/solutions/enterprise-networks/dna-difference.html?oid=viden005718">
                         <img alt="ciscodnadiference" className="videoImage" src={videoImage}></img>
                     </a>
                 </div>

@@ -18,7 +18,7 @@ class Colaboracion extends Component {
                         <img alt="securityLogo" src={colaboracion} className="techSectionHeaderLogo"></img>
                     </div>
                     <div className="techSectionHeaderText">
-                        <h1>Colaboracion</h1>
+                        <h1>Colaboración</h1>
                         <p>
                             Las últimas innovaciones están cambiando
                             la forma de colaborar en equipo.
