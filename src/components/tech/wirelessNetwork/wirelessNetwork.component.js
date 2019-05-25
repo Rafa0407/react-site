@@ -4,7 +4,7 @@ import '../generalSections.style.css'
 import '../wirelessNetwork/wirelessNetwork.style.css';
 
 
-import wirlessNet from '../../../../public/images/logo-de-señal.png'; 
+import wirlessNet from '../../../../public/images/logo-de-sennal.png'; 
 
 class WirelessNetwork extends Component {
     render() {

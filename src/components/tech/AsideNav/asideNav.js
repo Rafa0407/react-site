@@ -12,6 +12,7 @@ import WirelessNetwork from '../wirelessNetwork/wirelessNetwork.component';
 import Consulting from '../consulting/consulting.component';
 import Network from '../netwotk/network.component'; 
 import notFound from '../../notFound/notFound.component'; 
+import TechContainer from "../techContainer.component";
 
 /*Images*/
 import redes from '../../../../public/images/logo-world.png';
@@ -20,8 +21,9 @@ import nube from '../../../../public/images/logo-nube.png';
 import consultoria from '../../../../public/images/logo-grafico.png';
 import colaboracion from '../../../../public/images/logo-de-manos.png';
 import datos from '../../../../public/images/logo-de-unidad.png';
-import redesInhalambricas from '../../../../public/images/logo-de-señal.png'; 
+import redesInhalambricas from '../../../../public/images/logo-de-sennal.png'; 
 import logo from '../../../../public/images/logo-2.png'; 
+
  
 class AsideNav extends Component {
     render(){

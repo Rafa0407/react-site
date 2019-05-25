@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Column, Row } from 'simple-flexbox'; 
-
+import { Link } from 'react-router-dom';
 
 import '../tech-card/tech-card.style.css';  
 
@@ -19,7 +19,10 @@ class TechCard extends Component {
               <div className="pharagrapContainer">
                     <p>{ this.props.techCardInfo.pharagrap }</p>
               </div>
-              <a  href={ this.props.techCardInfo.cardLink } className="techBtn">Ver más</a>
+              <Link  className="techBtn" to={this.props.techCardInfo.cardLink}>
+                  Ver más
+              </Link > 
+              
            </div>
           </Row>
         </Column>

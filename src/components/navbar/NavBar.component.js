@@ -34,7 +34,7 @@ class NavBar extends Component {
                     </div>
                 </div>
                 <Switch>
-                    <Route exact path="/" component={HomeComponent} />
+                    <Route exact={true} path="/" component={HomeComponent} />
                     <Route path="/tech" component={TechComponent} />
                     <Route component={notFound} />
                 </Switch>
@@ -50,11 +50,4 @@ export default withRouter(NavBar);
                         <a href={`${this.props.location.pathname}#tech`} className="linkTo">Tecnologías</a>
                         <a href={`${this.props.location.pathname}#experience`} className="linkTo" >Experiencia</a>
                         <a href={`${this.props.location.pathname}#contactus`} className="linkTo" >Contácto</a>
-*/
-
-/*
-<a href="#home" className="linkTo" >Inicio </a>
-<a href="#tech" className="linkTo">Tecnologías</a>
-<a href="#experience" className="linkTo" >Experiencia</a>
-<a href="#contactus" className="linkTo" >Contácto</a>
 */

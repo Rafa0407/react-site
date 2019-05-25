@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Iframe from 'react-iframe'; 
 import '../generalSections.style.css'
 import '../colaboration/colaboration.style.css'
 

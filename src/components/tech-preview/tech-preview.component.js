@@ -9,7 +9,7 @@ import nube from '../../../public/images/logo-nube.png';
 import consultoria from '../../../public/images/logo-grafico.png';
 import colaboracion from '../../../public/images/logo-de-manos.png';
 import datos from '../../../public/images/logo-de-unidad.png';
-import redesInhalambricas from '../../../public/images/logo-de-señal.png';
+import redesInhalambricas from '../../../public/images/logo-de-sennal.png';
 
 class TechPreview extends Component {
     render = () => {

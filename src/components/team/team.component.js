@@ -5,8 +5,8 @@ import '../team/team.style.css';
 import SuccesTeamCard from '../team/teamCard/team-card.component';
 
 /*Team pictures*/
-import Nelson from '../../../public/images/nelson-zuñiga.png';
-import Diego from '../../../public/images/diego-zuñiga.png';
+import Nelson from '../../../public/images/nelson-zunniga.png';
+import Diego from '../../../public/images/diego-zunniga.png';
 import Julio from '../../../public/images/julio-hong.png';
 
 
