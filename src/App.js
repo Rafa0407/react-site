@@ -7,16 +7,13 @@ import TechComponent from './components/tech/techContainer.component';
 
 class App extends Component {
   render() {
-      if(this.props.location.pathname === '/'){
-        return(
-          <NavBar />
-        );
-      }
-      else{
-          return(
-            <TechComponent />  
-          );
-      }
+    return (
+      <div className="App">
+        {
+          this.props.location.pathname === '/' ? <NavBar /> : <TechComponent />
+        }
+      </div>
+    );
   }
 }
 

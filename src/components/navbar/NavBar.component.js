@@ -1,6 +1,6 @@
 /*Core imports */
 import React, { Component } from 'react';
-import { Link, BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom'
+import { NavLink, BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom';
 
 /*Style imports*/
 import '../navbar/NavBar.style.css';
@@ -22,15 +22,15 @@ class NavBar extends Component {
             <Router>
                 <div className="navBarContainer">
                     <div className="logoContainer">
-                        <Link to="/">
+                        <NavLink activeClassName="activeNav" to="/">
                                 <img  alt="logo" src={Logo} className="menuLogo"></img>
-                        </Link>
+                        </NavLink>
                     </div>
                     <div className="topnav">
-                        <a href="#home" className="linkTo" >Inicio </a>
-                        <a href="#tech" className="linkTo">Tecnologías</a>
-                        <a href="#experience" className="linkTo" >Experiencia</a>
-                        <a href="#contactus" className="linkTo" >Contácto</a>
+                        <a href={`${this.props.location.pathname}#home`} className="linkTo" >Inicio </a>
+                        <a href={`${this.props.location.pathname}#tech`} className="linkTo">Tecnologías</a>
+                        <a href={`${this.props.location.pathname}#experience`} className="linkTo" >Experiencia</a>
+                        <a href={`${this.props.location.pathname}#contactus`} className="linkTo" >Contácto</a> 
                     </div>
                 </div>
                 <Switch>
@@ -50,4 +50,11 @@ export default withRouter(NavBar);
                         <a href={`${this.props.location.pathname}#tech`} className="linkTo">Tecnologías</a>
                         <a href={`${this.props.location.pathname}#experience`} className="linkTo" >Experiencia</a>
                         <a href={`${this.props.location.pathname}#contactus`} className="linkTo" >Contácto</a>
+*/
+
+/*
+<a href="#home" className="linkTo" >Inicio </a>
+<a href="#tech" className="linkTo">Tecnologías</a>
+<a href="#experience" className="linkTo" >Experiencia</a>
+<a href="#contactus" className="linkTo" >Contácto</a>
 */

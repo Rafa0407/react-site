@@ -22,7 +22,7 @@ class Cloud extends Component {
                     </div>
                 </div>
                 <div className="techSectionVideoContainer">
-                    <Iframe url="//players.brightcove.net/1918791313001/EkgdWZ01ae_default/index.html?videoId=5702326678001"
+                    <Iframe url="https://www.youtube.com/embed/qLyYuEz-ws0"
                         id="cloudVideo"
                         className="techSectionVideo"
                         display="inline"

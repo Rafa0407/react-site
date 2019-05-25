@@ -61,3 +61,10 @@
     margin-left: 0px; }
   .navBarContainer {
     position: relative; } }
+
+.activeLogo {
+  background: #364066; }
+
+.activeNav {
+  text-decoration-color: #f0c936;
+  text-decoration: underline; }

@@ -5,7 +5,7 @@ import '../colaboration/colaboration.style.css'
 
 
 import netCenter from '../../../../public/images/logo-de-unidad.png'; 
-
+import dataCenterImage from '../../../../public/images/datacenter.png';
 class NetworkCenter extends Component {
     render() {
         return (
@@ -22,13 +22,11 @@ class NetworkCenter extends Component {
                         </p>
                     </div>
                 </div>
-                <div className="techSectionVideoContainer">
-                    <Iframe url="//players.brightcove.net/1384193102001/NJgI8K0ie_default/index.html?videoId=5993917247001"
-                        id="networkCenterVideo"
-                        className="techSectionVideo"
-                        display="inline"
-                        allow="fullscreen"
-                     />
+          
+                <div className="videoImageContainer">
+                    <a target="_blank" href="https://www.cisco.com/c/en/us/solutions/data-center-virtualization/index.html?socialshare=lightbox-1 ">
+                        <img alt="datacenter" className="videoImage" src={dataCenterImage}></img>
+                    </a>
                 </div>
                 <div className="techSectionContent">
                     
