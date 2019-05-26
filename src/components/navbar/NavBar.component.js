@@ -1,6 +1,6 @@
 /*Core imports */
 import React, { Component } from 'react';
-import { NavLink, Switch, Route, withRouter } from 'react-router-dom';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 /*Style imports*/
 import '../navbar/NavBar.style.css';
@@ -22,9 +22,9 @@ class NavBar extends Component {
             <div>
                 <div className="navBarContainer">
                     <div className="logoContainer">
-                        <NavLink activeClassName="activeNav" to="/">
+                        <HashLink smooth  to="/#home">
                                 <img  alt="logo" src={Logo} className="menuLogo"></img>
-                        </NavLink>
+                        </HashLink>
                     </div>
                     <div className="topnav"> 
 

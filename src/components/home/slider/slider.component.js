@@ -21,7 +21,7 @@ class SlideShow extends Component {
             slideParagraph: 'Vinet es el socio tecnológico para potenciar la transformación digital, en su compañía.', 
             btnText: 'Sucsess Team', 
             sliderImage: sliderImage1, 
-            linkTo: '#team'
+            linkTo: '/#team'
         }
         let card2 = {
             slideParagraph: 'Su asesor de tecnología en Costa Rica y Nicaragua.', 
@@ -33,13 +33,13 @@ class SlideShow extends Component {
             slideParagraph: 'Experiencia para entregar tecnología segura, escalable y sorprendente.', 
             btnText: 'Tecnologías', 
             sliderImage: sliderImage3, 
-            linkTo: '#tech'
+            linkTo: '/#tech'
         }
         let card4 = {
             slideParagraph: 'Planificamos, diseñamos e implementamos soluciones sostenibles para la era digital.', 
             btnText: 'Experiencia', 
             sliderImage: sliderImage4,
-            linkTo: '#experience'
+            linkTo: '/#experience'
         }
 
         var settings = {
@@ -49,9 +49,9 @@ class SlideShow extends Component {
             slidesToScroll: 1,
             arrows: false,
             adaptiveHeight: true,
-            // autoplay: true,  /*properties for autoplay slideshow, uncomment until work´is fine*/
-            // speed: 1000,
-            // autoplaySpeed: 4000,
+            autoplay: true, 
+            speed: 1000,
+            autoplaySpeed: 4000,
             pauseOnHover: true,
           }; 
           

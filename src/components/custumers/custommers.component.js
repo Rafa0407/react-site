@@ -1,6 +1,9 @@
 import React, {Component} from 'react'; 
 import '../custumers/custommer.style.css'; 
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 /* Cards images*/
 import alingnLogo from '../../../public/images/logo-align.png'; 
 import bccrLogo from '../../../public/images/logo-bccr.png'; 
@@ -43,6 +46,35 @@ class Custommers extends Component {
                             <img alt={"costummerLogo"} className="custommerImage" src={ maycaLogo }></img>
                         </li>
                     </ul>
+                </div>
+
+                <div className="casouselContainer">
+                    <Carousel width="85%" swipeable={true} showArrows={false} autoPlay={true} interval={3000} stopOnHove={true} dynamicHeight={false}>
+                    <div>
+                        <img alt="custommerLogo" src={alingnLogo} />
+                    </div>
+                    <div>
+                        <img alt="custommerLogo" src={bccrLogo} />
+                    </div>
+                    <div>
+                        <img alt="custommerLogo" src={coseviLogo} />
+                    </div>
+                    <div>
+                        <img alt="custommerLogo" src={mongeLogo} />
+                    </div>
+                    <div>
+                        <img alt="custommerLogo" src={mucapLogo} />
+                    </div>
+                    <div>
+                        <img alt="custommerLogo" src={esphLogo} />
+                    </div>
+                    <div>
+                        <img alt="custommerLogo" src={daviviendaLogo} />
+                    </div>
+                    <div>
+                        <img alt="custommerLogo" src={maycaLogo} />
+                    </div>
+                </Carousel>
                 </div>
             </section>
         );

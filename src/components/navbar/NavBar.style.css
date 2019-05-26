@@ -49,15 +49,15 @@
     flex-flow: row;
     margin: auto;
     position: relative; }
-  .navBarContainer .topnav {
-    display: none; }
-  .navBarContainer .logoContainer {
-    margin: auto;
-    background: transparent;
-    position: relative; }
-  .navBarContainer .logoContainer .menuLogo {
-    width: 30vw;
-    height: 20vh; } }
+    .navBarContainer .topnav {
+      display: none; }
+    .navBarContainer .logoContainer {
+      margin: auto;
+      background: transparent;
+      position: relative; }
+      .navBarContainer .logoContainer .menuLogo {
+        width: 30vw;
+        height: 20vh; } }
 
 @media all and (max-width: 400px) {
   .logoContainer .menuLogo {
