@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink , BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { NavLink , Switch, Route } from 'react-router-dom';
 
 import './asideNav.style.css'; 
 
@@ -12,7 +12,6 @@ import WirelessNetwork from '../wirelessNetwork/wirelessNetwork.component';
 import Consulting from '../consulting/consulting.component';
 import Network from '../netwotk/network.component'; 
 import notFound from '../../notFound/notFound.component'; 
-import TechContainer from "../techContainer.component";
 
 /*Images*/
 import redes from '../../../../public/images/logo-world.png';
@@ -28,7 +27,7 @@ import logo from '../../../../public/images/logo-2.png';
 class AsideNav extends Component {
     render(){
         return(
-            <Router>
+            <React.Fragment>
                 <div className="asideContainer">
                     <div className="asideNav">
                         <a className="asideBtn" onClick={this.showNav} href="/ " >
@@ -91,7 +90,7 @@ class AsideNav extends Component {
                     <Route path={"/tech/network"} component={Network} />
                     <Route component={notFound} />
                 </Switch>
-            </Router>
+            </React.Fragment>
         );
     }
 }

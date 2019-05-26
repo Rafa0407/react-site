@@ -1,7 +1,7 @@
 /*Core imports */
 import React, { Component } from 'react';
-import { NavLink, BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom';
-
+import { NavLink, Switch, Route, withRouter } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 /*Style imports*/
 import '../navbar/NavBar.style.css';
 
@@ -19,18 +19,20 @@ import Logo from '../../../public/images/Logo1.png'
 class NavBar extends Component {
     render() {
         return (
-            <Router>
+            <div>
                 <div className="navBarContainer">
                     <div className="logoContainer">
                         <NavLink activeClassName="activeNav" to="/">
                                 <img  alt="logo" src={Logo} className="menuLogo"></img>
                         </NavLink>
                     </div>
-                    <div className="topnav">
-                        <a href={`${this.props.location.pathname}#home`} className="linkTo" >Inicio </a>
-                        <a href={`${this.props.location.pathname}#tech`} className="linkTo">Tecnologías</a>
-                        <a href={`${this.props.location.pathname}#experience`} className="linkTo" >Experiencia</a>
-                        <a href={`${this.props.location.pathname}#contactus`} className="linkTo" >Contácto</a> 
+                    <div className="topnav"> 
+
+                        <HashLink smooth to="/#home" className="linkTo" >Inicio</HashLink>
+                        <HashLink smooth to="/#tech" className="linkTo" >Tecnologías</HashLink>
+                        <HashLink smooth to="/#experience" className="linkTo">Experiencia</HashLink>
+                        <HashLink smooth to="/#contactus" className="linkTo">Contácto</HashLink>
+
                     </div>
                 </div>
                 <Switch>
@@ -38,7 +40,7 @@ class NavBar extends Component {
                     <Route path="/tech" component={TechComponent} />
                     <Route component={notFound} />
                 </Switch>
-            </Router>
+            </div>
         );
     }
 };
@@ -46,7 +48,7 @@ export default withRouter(NavBar);
 
 
 /* 
-<a href={`${this.props.location.pathname}#home`} className="linkTo" >Inicio </a>
+                        <a href={`${this.props.location.pathname}#home`} className="linkTo" >Inicio </a>
                         <a href={`${this.props.location.pathname}#tech`} className="linkTo">Tecnologías</a>
                         <a href={`${this.props.location.pathname}#experience`} className="linkTo" >Experiencia</a>
                         <a href={`${this.props.location.pathname}#contactus`} className="linkTo" >Contácto</a>

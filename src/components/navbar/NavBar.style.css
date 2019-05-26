@@ -36,12 +36,12 @@
 
 .logoContainer {
   list-style: none;
-  margin-left: 15px;
+  margin-left: 50px;
   background: transparent;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  position: fixed; }
+  position: absolute; }
 
 @media all and (max-width: 600px) {
   .topnav {
@@ -61,10 +61,3 @@
     margin-left: 0px; }
   .navBarContainer {
     position: relative; } }
-
-.activeLogo {
-  background: #364066; }
-
-.activeNav {
-  text-decoration-color: #f0c936;
-  text-decoration: underline; }

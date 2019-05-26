@@ -7,7 +7,6 @@ import TechComponent from './components/tech/techContainer.component';
 
 class App extends Component {
   render() {
-    console.log(this.props.location);
     return (
       <div className="App">
         {

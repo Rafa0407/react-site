@@ -50,13 +50,12 @@
 // MEDIA QUERY.... 
   @media all and (max-width: 1265px) {
     .custommer-item {
-        padding: 15px;
-        width: 180px;
+        width: 16vw;
         height: 136px;
     }
     .custommerImage{
         max-width: 100%;
-        width: 130px;
+        width: 125px;
         height: 90px;
         padding: 30px;
     }
@@ -68,15 +67,14 @@
         margin: auto;
     }
     .custommer-item {
-        padding: 10px;
-        width: 160px;
+        width: 15vw;
         height: 120px;
     }
     .custommerImage{
         max-width: 100%;
         width: 120px;
         height: 80px;
-        padding: 26px;
+        padding: 10px;
     }
   }
 
@@ -85,8 +83,8 @@
         padding: 40px;
     }
     .custommer-item {
-        padding: 10px;
-        width: 122px;
+        // padding: 10px;
+        width: 15vw;
         height: 100px;
     }
     .custommerImage{
@@ -103,15 +101,15 @@
         margin: auto;
     }
     .custommer-item {
-        padding: 10px;
-        width: 87px;
+        padding: 15px;
+        width: 11vw;
         height: 85px;
     }
     .custommerImage{
         max-width: 100%;
         width: 70px;
         height: 50px;
-        padding: 20px;
+        padding: 10px;
     }
 
     .column1{
@@ -143,15 +141,15 @@
         margin: auto;
     }
     .custommer-item {
-        padding: 15px;
-        width: 70px;
+        padding: 11px;
+        width: 14vw;
         height: 60px;
     }
     .custommerImage{
         max-width: 100%;
         width: 65px;
         height: 40px;
-        padding: 5px;
+        padding: 10px;
     }
 
     .column1{
