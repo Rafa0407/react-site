@@ -16,23 +16,45 @@
 }
 
 .teamTextContainer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     flex-basis: 60%;
     width: 15vw;
-    height: 35vh;
     margin: auto;
     .cardtextItems{
         width: auto;
         height: auto;
+    }
+    .cardtextItems h3{
+        align-content: center;
+        font-size: 2em;
+        text-align: center;
     }
 }
 
 @media all and (max-width: 838px) {
     .teamCards{
         flex-flow: column;
+        align-items: center;
+    }
+    .teamTextContainer{
+        flex-basis: 76%;
+        width: 25vw;
+        height: 20vh;
+        margin: auto;
+    }
+    .cardImageContainer {
+        width: 15vw;
+    }
+    .teamTextContainer{
+        .cardtextItems h3{
+            font-size: 1.5em;
+        }
     }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
     .teamCards{
         flex-flow: row;
         margin-bottom: 10px;
@@ -42,6 +64,11 @@
         width: 15vw;
         height: 20vh;
         margin: auto;
+        .cardtextItems h3{
+            align-content: center;
+            font-size: 1.5em;
+            text-align: center;
+        }
     }
     .teamTextContainer .cardtextItems {
         font-size: 0.9em;

@@ -87,7 +87,7 @@
           flex-flow: column !important; 
           .buttomContainer{
             cursor: pointer;
-            flex-basis: 40%;
+            flex-basis: 45%;
             align-content: center;
             margin-bottom: 0px;
           }
@@ -99,8 +99,13 @@
         }
         .slideImage{
           max-width: 96% !important;
-          height: 65vh !important;
+          height: 50vh !important;
           bottom: 35px;
+        }
+
+        .buttomContainer .textInfo {
+          font-size: 1.5em !important;
+          width: 70vw !important; 
         }
 
       }

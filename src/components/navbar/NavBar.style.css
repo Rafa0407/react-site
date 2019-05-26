@@ -44,20 +44,22 @@
   position: absolute; }
 
 @media all and (max-width: 600px) {
-  .topnav {
-    background: white;
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0; }
-  .topnav .linkTo {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-  .logoContainer {
-    position: relative;
-    justify-content: center; }
-  .logoContainer {
-    margin-left: 0px; }
   .navBarContainer {
-    position: relative; } }
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    position: relative; }
+  .navBarContainer .topnav {
+    display: none; }
+  .navBarContainer .logoContainer {
+    margin: auto;
+    background: transparent;
+    position: relative; }
+  .navBarContainer .logoContainer .menuLogo {
+    width: 30vw;
+    height: 20vh; } }
+
+@media all and (max-width: 400px) {
+  .logoContainer .menuLogo {
+    width: 40vw !important;
+    height: 20vh; } }

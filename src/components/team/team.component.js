@@ -16,18 +16,15 @@ class SuccesTeam extends Component {
 
         let teamInfo = [
             {
-                name: 'Nelson Zúñiga', 
-                info: 'Lorem ipsum dolor sit amet, consectetuer. Adipiscing eli sed diam.', 
+                name: 'Nelson Zúñiga',
                 image: Nelson 
             }, 
             {
                 name: 'Julio Hong', 
-                info: 'Lorem ipsum dolor sit amet, consectetuer. Adipiscing eli sed diam.', 
                 image: Julio 
             }, 
             {
-                name: 'Diego Zúñiga', 
-                info: 'Lorem ipsum dolor sit amet, consectetuer. Adipiscing eli sed diam.', 
+                name: 'Diego Zúñiga',
                 image: Diego 
             }
         ]

@@ -86,14 +86,14 @@ class Contact extends Component {
                   <div className="contactsContainer">
                     <div className="contactItem">
                       <h1>Costa Rica</h1>
-                      <p>+(506) 2234 2682</p>
-                      <p>contacto@vinet.co.cr </p>
+                      <a href="tel:+50622342682"><p>+(506) 2234 2682</p></a> 
+                      <a href="mailto:contacto@vinet.co.cr"><p>contacto@vinet.co.cr </p></a>
                       <p>Curridabat, Costa Rica.</p>
                     </div>
                     <div className="contactItem">
                       <h1>Nicaragua</h1>
-                      <p>+(505) 2251 6327</p>
-                      <p>contacto@vinet.co.cr</p>
+                      <a href="tel:+50522516327"><p>+(505) 2251 6327</p></a>
+                      <a href="mailto:contacto@vinet.co.cr"><p>contacto@vinet.co.cr</p></a>
                       <p>Managua, Nicaragua.</p>
                     </div>
                   </div>

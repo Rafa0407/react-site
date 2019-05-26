@@ -11,7 +11,7 @@ class SuccesTeamCard extends Component {
                 <div className="teamTextContainer">
                     <div className="cardtextItems" >
                         <h3>{ this.props.teamCard.name }</h3>
-                        <p> { this.props.teamCard.info } </p>
+                        
                     </div>
                 </div>
             </div>
@@ -19,3 +19,5 @@ class SuccesTeamCard extends Component {
     }
 }
 export default SuccesTeamCard;
+
+/*<p> { this.props.teamCard.info } </p> para cuando decidan integrar algún parrafo*/

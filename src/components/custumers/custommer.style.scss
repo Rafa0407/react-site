@@ -14,7 +14,7 @@
 
 .custommer-item{
     padding: 20px;
-    width: 235px;
+    width: 18vw;
     height: 145px;
     align-self: center;
     text-align: center;
@@ -97,11 +97,11 @@
 
   @media all and (max-width: 672px) {
     .custommerContainer{
-        padding: 65px;
+        padding: 70px;
         margin: auto;
     }
     .custommer-item {
-        padding: 15px;
+        padding: 16px;
         width: 11vw;
         height: 85px;
     }
@@ -137,51 +137,48 @@
    
   @media all and (max-width: 564px) {
     .custommerContainer{
-        padding: 65px;
+        padding: 15px;
         margin: auto;
     }
     .custommer-item {
-        padding: 11px;
-        width: 14vw;
-        height: 60px;
+        width: 30vw;
+        height: 90px;
     }
     .custommerImage{
         max-width: 100%;
-        width: 65px;
-        height: 40px;
+        width: 20vw;
+        height: 12vh;
         padding: 10px;
     }
 
     .column1{
-        border: 1.5px solid #353f69;   
+        border: none;
     }
     .column2{
-        border: 1.5px solid #353f69;
+        border: none;
     }
 
   }
 
 
-  @media all and (max-width: 335px) {
+  @media all and (max-width: 400px) {
     .custommerContainer{
-        padding: 65px;
+        padding: 15px;
         margin: auto;
     }
     .custommer-item {
-        padding: 8px;
-        width: 65px;
-        height: 65px;
+        width: 34vw;
+        height: 15vh;
     }
     .custommerImage{
         max-width: 100%;
-        width: 55px;
-        height: 35px;
-        padding: 0px;
+        width: 25vw;
+        height: 12vh;
     }
     .column1{
-        border: 0.1px solid #353f69;   
+        border: none;
     }
     .column2{
-        border: 0.1px solid #353f69;
+        border: none;
     }
   }

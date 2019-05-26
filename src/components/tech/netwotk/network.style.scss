@@ -7,7 +7,21 @@
     }
 }
 
+.networkHeaderLogo{
+  width: 9vw;
+  height: 16vh;
+}
 
+@media all and (max-width: 600px) {
+  .networkHeaderLogo{
+    width: 25vw;
+  }
+}
+@media all and (max-width: 300px) {
+  .networkHeaderLogo{
+    width: 40vw;
+  }
+}
 // accordion style 
 .accordion {
     margin: 3em auto;

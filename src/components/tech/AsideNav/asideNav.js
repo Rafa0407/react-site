@@ -32,7 +32,7 @@ class AsideNav extends Component {
                     <div className="asideNav">
                         <a className="asideBtn" onClick={this.showNav} href="/ " >
                             <div  className="asideItems">
-                                <img alt="asideImage" className="asideImage" src={logo}></img>
+                                <img alt="asideImage" className="homeImage" src={logo}></img>
                                 <p>Inicio</p>
                             </div>
                         </a > 

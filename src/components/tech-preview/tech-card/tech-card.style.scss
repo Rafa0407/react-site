@@ -22,7 +22,6 @@
         display: none;
     }
     .techBtn{ 
-         
         background-color: #353f69; 
         border: none;
         color: white;
@@ -44,6 +43,7 @@
     }
 }
 
+
 @media all and (max-width: 756px) {
     .techCardContainer {
         width: 200px;
@@ -62,9 +62,22 @@
   }
   @media all and (max-width:  400px) {
     .techCardContainer {
-        width: 155px;
+        width: 55vw;
     }
     .techPreviewSection{
-        height: 138vh;
+        height: 215vh;
+    }
+    .techImageContainer .techCardImage{
+        width: 24vw;
+        height: 13vh;
+    }
+    .techCardContainer:hover{
+        .techBtn{
+            display: inline-block;
+        }
+        .pharagrapContainer{
+            padding: 10px;
+            align-items: center;
+        }
     }
   }

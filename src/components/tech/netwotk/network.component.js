@@ -14,7 +14,7 @@ class Network extends Component {
             <div className="techSectionContainer">
                 <div className="techSectionHeader">
                     <div className="techSectionHeaderImage">
-                        <img alt="networkLogo" src={network} className="techSectionHeaderLogo"></img>
+                        <img alt="networkLogo" src={network} className="networkHeaderLogo"></img>
                     </div>
                     <div className="techSectionHeaderText">
                         <h1>Redes</h1>

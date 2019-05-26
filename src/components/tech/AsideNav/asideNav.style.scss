@@ -47,10 +47,41 @@
     height: 60px;
     width: 65px;
 }
+.homeImage{
+  height: 10vh;
+  width: 9vw;
+}
 
 .active{
   background-color: #fb425e; 
   color: #353f69;
   border-radius: 80%;
   text-decoration: none;
+} 
+
+@media all and (max-width: 600px) {
+  .asideContainer{
+    display: flex;
+    flex-basis: 20%;
+    background: #f74f68;
+    justify-content: center;
+  }
+  .asideItems{
+    justify-content: space-around;
+    
+  }
+  .asideItems p {
+    color: #353f69;
+    text-align: center;
+    width: 70px;
+    font-size: 0.8em;
+  }
+  .asideImage {
+    height: 2.8vh;
+    width: 4vw;
+  }
+  .homeImage{
+    height: 7vh;
+    width: 15vw;
+  }
 }

@@ -32,29 +32,8 @@
   }
 }
 @media all and (max-width: 600px) {
-    .experienceHeader {
-        flex-flow: column;
-        text-align: center;
-        max-width: 100%;
-        width: 50%;
-        height: 120px;
-        margin: auto;
-        padding: 10px;
-    }
-    .experienceHeader h1{
-        margin: 0px;
-        font-size: 2.5em;
-  }
-  .experienceHeader p{
-    margin: 0px;
-    font-size: 0.9em;
-}
-}
-
-
-@media all and (max-width: 400px) {
-    .cardExperienceContainer{
-        padding: 0px;
+    .experienceSection{
+        display: none;
     }
 }
 
@@ -66,10 +45,3 @@
     justify-content: center;
 }
 
-@media all and (max-width: 600px) {
-    .techContainer {
-      -webkit-flex-flow: row wrap;
-      flex-flow: row wrap;
-      padding: 0;
-    }
-  }
