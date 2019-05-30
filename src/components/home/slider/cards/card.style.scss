@@ -1,111 +1,229 @@
-
 .cardContainer{
   height: 100vh;
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-flow: row;
   .buttomContainer{
     flex-basis: 30%;
     margin: auto;
     flex-flow: row wrap;
     text-align: center;
-    .btn{
-          background-color: #3e6aaf; 
-          border: none;
-          color: white;
-          padding: 15px 32px;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 1em;
-          max-width: 50%;
-          width: auto; 
-          height: auto,
+      .btn{
+        background-color: #3e6aaf; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        max-width: 50%;
+        width: auto; 
+        height: auto,
       } 
-
       .textInfo{
-          max-width: 100%;
-          max-height: auto;
-          text-align: left; 
-          text-decoration: none;
-          text-align: center;
-          width: 25vw; 
-          font-size: 1em;
-          color: #3e6aaf;
+        max-width: 100%;
+        max-height: auto;
+        text-align: left; 
+        text-decoration: none;
+        text-align: center;
+        width: 25vw; 
+        font-size: 1em;
+        color: #3e6aaf;
       }
-          
+  }
+    .imageContainer{
+      flex-basis: 70%;
+      align-content: center;
+        .slideImage {
+          max-width: 100%;
+          width:  auto;
+          height: 96vh; 
+        }
+        .mapImage{
+          max-width: 100%;
+          width: auto;
+          height: 110vh;
+          bottom: 20px;
+          position: absolute;
+        }
+    } 
+}
+@media all and (min-width: 901px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .cardContainer{
+    height: 100vh;
+    width: auto;
+    display: inline-grid;
+      .imageContainer .slideImage{
+        max-width: 100% ;
+        top: 13px;
+        height: 100vh;
+      }
+      .imageContainer .mapImage{
+        max-width: 140%;
+        width: auto;
+        height: 112vh;
+        bottom: 10px;
+      }
+  }
+}
+// Medium screens 
+@media all and (max-width: 900px) {
+.cardContainer{
+  height: 90vh !important;
+  width: auto;
+  flex-flow: column !important;
+  align-items: center;
+  .buttomContainer{
+    flex-basis: 20%;
+    align-content: center;
+    margin: 10px;
+    .textInfo{
+      width: 50vw;
+      font-size: 1.5em;
+    }
   }
   .imageContainer{
-    flex-basis: 70%;
-    align-content: center;
-    position: relative;
-    .slideImage {
-      max-width: 100%;
-      width:  auto;
-      height: 96vh; 
-      position: absolute;
+      flex-basis: 75% ;
+      align-content: center;
+      position: relative;
+      .slideImage{
+        max-width: 100%;
+        object-fit: cover;
+        width: 70vw;
+        height: auto;
       }
-    } 
-  }
-  @media all and (min-width: 901px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    .slideImage{
-      max-width: 99% !important;
-      top: 13px;
-      height: 92vh;
-    }
-    .cardContainer{
-      height: 100vh;
-      display: inline-grid;
-    }
-  }
-    // Medium screens 
-    @media all and (max-width: 900px) {
-      .cardContainer{
-        height: 100vh !important;
-        flex-flow: column !important;
-      }
-      .imageContainer{
-        flex-basis: 60% !important;
-        align-content: center;
+      .mapImage {
+        object-fit: cover;
+        height: 60vh;
+        max-width: 100%;
         position: relative;
       }
-      .buttomContainer{
-        flex-basis: 20%;
+    }
+  }
+}
+@media all and (max-width: 800px) {
+  .cardContainer{
+    height: 90vh !important;
+    width: auto;
+    flex-flow: column !important;
+    align-items: center;
+    .imageContainer{
+        flex-basis: 75% ;
         align-content: center;
-        margin: auto;
+        .slideImage{
+          max-width: 100%;
+          object-fit: cover;
+          width: 75vw;
+          height: auto;
+        }
+        .mapImage {
+          object-fit: cover;
+          height: 60vh;
+          max-width: 100%;
+        }
       }
-      .textInfo{
-        width: 90vw !important; 
-        font-size: 1em;
     }
-    .slideImage{
-      max-width: 85% !important;
-      height: 80vh !important;
-      bottom: 25px;
+  }
+  @media all and (max-width: 700px) {
+    .sliderSection {
+      display: flex;
+      flex-flow: column;
+      height: auto !important;
     }
-    }
-      // Small screens 
-      @media all and (max-width: 600px) {
-        .cardContainer{
-          height: 80vh;
-          flex-flow: column !important; 
-          .buttomContainer{
-            cursor: pointer;
-            flex-basis: 45%;
-            align-content: center;
-            margin-bottom: 0px;
+    .cardContainer{
+      height: auto !important;
+      width: auto;
+      flex-flow: column !important;
+      align-items: center;
+      .imageContainer{
+          flex-basis: 75% ;
+          align-content: center;
+          .slideImage{
+            max-width: 100%;
+            object-fit: cover;
+            width: 71vw;
+            height: auto;
+          }
+          .mapImage {
+            object-fit: cover;
+            height: 60vh;
+            max-width: 100%;
           }
         }
-        .imageContainer{
-          flex-basis: 47% !important;
-          align-content: center;
-          position: relative;
-        }
-        .slideImage{
-          max-width: 96% !important;
-          height: 50vh !important;
-          bottom: 35px;
-        }
-
-        .buttomContainer .textInfo {
-          font-size: 1.5em !important;
-          width: 70vw !important; 
-        }
-
       }
+    }
+// Small screens 
+@media all and (max-width: 600px) {
+  .sliderSection {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+  }
+  .cardContainer{
+      height: auto;
+      flex-flow: column !important;
+      .buttomContainer{
+        cursor: pointer;
+        flex-basis: 20%;
+        align-content: center;
+        margin: 10px;
+        .textInfo {
+          font-size: 1.2em ;
+          width: 62vw;
+        }
+      }
+      .imageContainer{
+        flex-basis: 70% ;
+        align-content: center;
+        .slideImage{
+          max-width: 100%;
+          object-fit: cover;
+          width: 65vw;
+          height: auto;
+        }
+        .mapImage {
+          object-fit: cover;
+          height: 45vh;
+          max-width: 100%; 
+        }
+    }
+  }
+}
+
+@media all and (max-width: 400px) {
+  .sliderSection {
+    display: flex;
+    flex-flow: column;
+    height: 69vh !important;
+  }
+  .cardContainer{
+      height: 70vh !important;
+      flex-flow: column ; 
+    .buttomContainer{
+      flex-basis: 30%;
+      align-content: center;
+      margin: 10px;
+      .textInfo {
+        font-size: 1em ;
+        width: 70vw ; 
+        }
+      }
+      .imageContainer{
+        flex-basis: 80% ;
+        align-content: center;
+        .slideImage{
+          max-width: 100%;
+          object-fit: cover;
+          width: 90vw;
+          height: auto;
+        }
+        .mapImage {
+          object-fit: cover;
+          height: 40vh;
+          max-width: 100%; 
+          }
+      }
+    } 
+
+}

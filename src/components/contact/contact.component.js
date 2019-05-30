@@ -11,6 +11,7 @@ class Contact extends Component {
     email: '',
     companyName: '',
     message: '',
+    architecture: '',
     sent: false,
     buttonText: 'Enviar Mensaje'
   }
@@ -27,7 +28,8 @@ class Contact extends Component {
         phone: this.state.phone,
         email: this.state.email,
         companyName: this.state.companyName,
-        message: this.state.message
+        message: this.state.message,
+        architecture: this.state.architecture
     }
 
     axios.post('http://localhost:3002/send', data) // API URL... change this for the production URL.... 
@@ -48,6 +50,7 @@ class Contact extends Component {
         email: '',
         companyName: '',
         message: '',
+        architecture: '',
         buttonText: 'Mensaje enviado'
     })
   }

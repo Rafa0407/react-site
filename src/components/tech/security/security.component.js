@@ -14,7 +14,7 @@ class Security extends Component {
                     <div className="techSectionHeaderImage">
                         <img alt="securityLogo" src={seguridad} className="techSectionHeaderLogo"></img>
                     </div>
-                    <div className="techSectionHeaderText">
+                    <div className="secHeaderText">
                         <h1>Seguridad</h1>
                         <p>
                             Detecte y detenga las amenazas de manera más
@@ -87,6 +87,13 @@ class Security extends Component {
                     puede averiguar más de este universo de Cisco aquí: 
                     <a href="https://www.cisco.com/c/en/us/products/security/talos.html"> CISCO Talos</a>
                     </p>
+
+                    <div className="techBtnContainer">
+                        <a className="linkBtn" href="https://www.cisco.com/c/es_mx/products/security/index.html" target="_blank">
+                            Ver más
+                        </a>
+                    </div>
+
                 </div>
             </div>
         );

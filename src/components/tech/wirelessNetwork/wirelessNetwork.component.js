@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Iframe from 'react-iframe'; 
+import Iframe from 'react-iframe';
 import '../generalSections.style.css'
 import '../wirelessNetwork/wirelessNetwork.style.css';
 
 
-import wirlessNet from '../../../../public/images/logo-de-sennal.png'; 
+import wirlessNet from '../../../../public/images/logo-de-sennal.png';
 
 class WirelessNetwork extends Component {
     render() {
@@ -12,7 +12,7 @@ class WirelessNetwork extends Component {
             <div className="techSectionContainer">
                 <div className="techSectionHeader">
                     <div className="wirlessHeaderImage">
-                        <img alt="securityLogo" src={wirlessNet} className="wirlessHeaderLogo"></img>
+                        <img alt="wirlessLogo" src={wirlessNet} className="wirlessHeaderLogo"></img>
                     </div>
                     <div className="wirlessHeaderText">
                         <h1>Redes inalámbricas y movilidad</h1>
@@ -29,7 +29,7 @@ class WirelessNetwork extends Component {
                         className="techSectionVideo"
                         display="inline"
                         allow="fullscreen"
-                     />
+                    />
                 </div>
                 <div className="techSectionContent">
 
@@ -37,7 +37,7 @@ class WirelessNetwork extends Component {
                         Una arquitectura cableada e inalámbrica
                         para satisfacer las demandas en permanente
                         cambio.
-                    </h1> 
+                    </h1>
 
                     <h3 className="techSectionText">Adáptese a la demanda móvil</h3>
                     <p className="techSectionText">
@@ -49,11 +49,11 @@ class WirelessNetwork extends Component {
                     <p className="techSectionText">
                         Para el 2021, el 51% de los dispositivos de red serán de máquina a
                         máquina (Cisco VNI).
-                    </p> 
+                    </p>
 
                     <h1>
                         La oficina que trabaja con el mismo esfuerzo que usted
-                    </h1> 
+                    </h1>
                     <p className="techSectionText">
                         Con un solo clic y arrastre del mouse, obtenga todo el efecto de la
                         experiencia de las redes empresariales Cisco en esta panorámica de
@@ -64,7 +64,7 @@ class WirelessNetwork extends Component {
                     <p className="techSectionText">
                         Obtener tecnología inalámbrica de clase empresarial para la empresa
                         en crecimiento.
-                    </p> 
+                    </p>
                     <ul className="techSectionText">
                         <li>Ir a Mobility Express.</li>
                     </ul>
@@ -72,7 +72,7 @@ class WirelessNetwork extends Component {
                     <h3 className="techSectionText">Conectarme con mis clientes</h3>
                     <p className="techSectionText">
                         Ofrecer experiencias personalizadas basadas en la ubicación.
-                    </p> 
+                    </p>
                     <ul className="techSectionText">
                         <li>Ver qué hace CMX.</li>
                     </ul>
@@ -81,7 +81,7 @@ class WirelessNetwork extends Component {
                     <p className="techSectionText">
                         Brinde acceso a la red en minutos a cualquier usuario y aplicación, sin
                         comprometer la seguridad.
-                    </p> 
+                    </p>
                     <ul className="techSectionText">
                         <li>Explorar SD-Access.</li>
                     </ul>
@@ -104,6 +104,12 @@ class WirelessNetwork extends Component {
                         <li>Análisis y aseguramiento de Cisco DNA.</li>
                         <li>Cisco DNA Center.</li>
                     </ul>
+
+                    <div className="techBtnContainer">
+                        <a className="linkBtn" href="https://www.cisco.com/c/es_mx/products/wireless/index.html" target="_blank">
+                            Ver más
+                        </a>
+                    </div>
                 </div>
             </div>
         );

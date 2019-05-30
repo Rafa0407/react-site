@@ -15,7 +15,7 @@ class Colaboracion extends Component {
             <div className="techSectionContainer">
                 <div className="techSectionHeader">
                     <div className="techSectionHeaderImage">
-                        <img alt="securityLogo" src={colaboracion} className="techSectionHeaderLogo"></img>
+                        <img alt="colaborationLogo" src={colaboracion} className="techSectionHeaderLogo"></img>
                     </div>
                     <div className="techSectionHeaderText">
                         <h1>Colaboración</h1>
@@ -147,6 +147,11 @@ class Colaboracion extends Component {
                             digital, en un solo dispositivo.
                             </p>
                         </div>
+                    </div>
+                    <div className="techBtnContainer">
+                        <a className="linkBtn" href="https://www.cisco.com/c/es_mx/solutions/collaboration/index.html" target="_blank">
+                            Ver más
+                        </a>
                     </div>
                     
                 </div>

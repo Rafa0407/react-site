@@ -8,18 +8,70 @@
 }
 
 .networkHeaderLogo{
-  width: 9vw;
-  height: 16vh;
+  object-fit: cover;
+  width: 130px;
+  height: auto;
+}
+.netHeaderText{
+  flex-basis: 55%;
+  // background-color: #e0e0e0; 
+  text-align: left;
+
+  h1{
+    font-size: 3em;
+    margin: 0px;
+    font-weight: lighter;
+  }
+}
+@media all and (max-width: 1000px) {
+  .netHeaderText{
+    flex-basis: 50%;
+    h1{
+      font-size: 2.5em;
+    }
+  }
+  .networkHeaderLogo{
+    object-fit: cover;
+    width: 110px;
+    height: auto;
+  }
+}
+@media all and (max-width: 800px) {
+  .netHeaderText{
+    flex-basis: 40%;
+    h1{
+      font-size: 2em;
+    }
+    p{
+      font-size: 0.9em;
+    }
+  }
+  .networkHeaderLogo{
+    object-fit: cover;
+    width: 110px;
+    height: auto;
+  }
 }
 
 @media all and (max-width: 600px) {
+  .netHeaderText{
+    flex-basis: 50%;
+    text-align: center;
+    h1{
+      font-size: 2em;
+    }
+  }
   .networkHeaderLogo{
-    width: 25vw;
+    object-fit: cover;
+    width: 100px;
+    height: auto;
   }
 }
 @media all and (max-width: 300px) {
   .networkHeaderLogo{
-    width: 40vw;
+    object-fit: cover;
+    width: 150px;
+    height: auto;
   }
 }
 // accordion style 

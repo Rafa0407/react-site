@@ -94,7 +94,11 @@ class NetworkCenter extends Component {
                         <li>CloudCenter.</li>
                         <li>Enterprise Cloud Suite.</li>
                     </ul>
-                    
+                    <div className="techBtnContainer">
+                        <a className="linkBtn" href="https://www.cisco.com/c/es_mx/solutions/data-center-virtualization/index.html" target="_blank">
+                            Ver más
+                        </a>
+                    </div>
                 </div>
             </div>
         );

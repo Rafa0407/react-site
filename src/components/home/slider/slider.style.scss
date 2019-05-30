@@ -1,7 +1,6 @@
-
-
 .sliderSection {
   height: auto;
+  position: relative;
 }
 
 /*dots container*/
@@ -16,3 +15,13 @@
 .slick-dots li.slick-active button:before {
   color: #3e6aaf !important;  
 }
+
+// para el mapa 
+
+/*
+    max-width: 100%;
+    width: auto;
+    height: 96vh;
+    position: absolute;
+    bottom: 94px;
+*/

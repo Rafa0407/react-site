@@ -27,15 +27,15 @@ class Card extends Component {
       else{
         return (
           <div>
-            <Row  onLarge="row" onMedium='column' onSmall='column' className="cardContainer">
-              <Column alignItems='center' className="buttomContainer">
+            <Row  flex onLarge="row" onMedium='column' onSmall='column' className="cardContainer">
+              <Column flex onMedium='row' onSmall='row' alignItems='center' className="buttomContainer">
                <div>
                   <p  className="textInfo">{ this.props.card.slideParagraph }</p>
                   <a  href={ this.props.card.linkTo } className="btn" >{ this.props.card.btnText }</a>
                </div>
               </Column>
-              <Column alignItems='center' className="imageContainer">
-                  <img alt="slideImage" className="slideImage" src={ this.props.card.sliderImage }/>
+              <Column  flex onMedium='row' onSmall='row' alignItems='center' className="imageContainer">
+                  <img alt="slideImage" className="mapImage" src={ this.props.card.sliderImage }/>
               </Column>
             </Row>
           </div>

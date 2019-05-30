@@ -16,7 +16,7 @@ class Network extends Component {
                     <div className="techSectionHeaderImage">
                         <img alt="networkLogo" src={network} className="networkHeaderLogo"></img>
                     </div>
-                    <div className="techSectionHeaderText">
+                    <div className="netHeaderText">
                         <h1>Redes</h1>
                         <p>
                             Aproveche todo el potencial de su red. Logre
@@ -86,6 +86,12 @@ class Network extends Component {
                         <li>Seguridad de SDN.</li>
                         <li>Seguridad de SD-WAN (nuevo).</li>
                     </ul>
+
+                    <div className="techBtnContainer">
+                        <a className="linkBtn" href="https://www.cisco.com/c/es_cr/solutions/enterprise-networks/index.html" target="_blank">
+                            Ver más
+                        </a>
+                    </div>
                 </div>
             </div>
         );

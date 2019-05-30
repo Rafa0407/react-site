@@ -48,10 +48,10 @@ class SlideShow extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            adaptiveHeight: true,
-            autoplay: true, 
-            speed: 1000,
-            autoplaySpeed: 4000,
+            
+            // autoplay: true, 
+            // speed: 1000,
+            // autoplaySpeed: 4000,
             pauseOnHover: true,
           }; 
           
@@ -72,7 +72,6 @@ class SlideShow extends Component {
               </div>
             </Slider> 
           </section>
-
         )
     }
 }

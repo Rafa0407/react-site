@@ -1,14 +1,12 @@
 .techCardContainer{
-    width: 325px;
+    width: 320px;
     text-align: center;
+    margin-top: 15px;
 }
-
-
 .techImageContainer{
     flex-basis: 70%;
     .techCardImage{
-        width: 130px;
-        height: 115px;
+        height: 17vh;
     }
 }
 .techInfoContainer{
@@ -27,14 +25,14 @@
         color: white;
         padding: 15px 32px;
         text-decoration: none;
-        display: none; 
         font-size: 1em;
+        font-weight: bold;
         max-width: 50%;
         width: auto; 
         height: auto;
     } 
 }
-.techCardContainer:hover{
+.techCardContainer{
     .techBtn{
         display: inline-block;
     }
@@ -48,16 +46,11 @@
     .techCardContainer {
         width: 200px;
     }
-    .techCardImage{
-        width: 70px;
-        height: 50px;
-    }
     .techImageContainer .techCardImage{
-        width: 100px;
-        height: 80px;
+        height: 9vh;
     }
     .techPreviewSection{
-        height: 110vh;
+        height: 0%;
     }
   }
   @media all and (max-width:  400px) {
@@ -65,13 +58,18 @@
         width: 55vw;
     }
     .techPreviewSection{
-        height: 215vh;
+        height: 0%;
+    }
+    .techInfoContainer {
+        margin: 15px;
+    }
+    .techInfoContainer .techTextInfo {
+        margin: auto;
     }
     .techImageContainer .techCardImage{
-        width: 24vw;
-        height: 13vh;
+        height: 10vh;
     }
-    .techCardContainer:hover{
+    .techCardContainer{
         .techBtn{
             display: inline-block;
         }

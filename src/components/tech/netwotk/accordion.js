@@ -13,7 +13,14 @@ class Accordion extends Component {
                         DESCUBRA LAS 6 RAZONES PARA SER CISCO DNA
                     </label>
                     <div className="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>
+                            La ventaja de la red es la primera línea de defensa, donde se aplica la política para
+                            determinar quién o qué tiene acceso a su red y detectar actividades sospechosas,
+                            incluso en el tráfico cifrado. Solo se necesita una vez para que una violación de
+                            datos afecte a su organización. Con tanto potencial para la infiltración, es
+                            fundamental contar con una solución confiable para identificar y controlar lo que
+                            entra en la red.
+                        </p>
                     </div>
                 </div>
 
@@ -23,7 +30,14 @@ class Accordion extends Component {
                         DATOS MÁS PROFUNDOS, IDEAS MÁS RÁPIDAS
                     </label>
                     <div className="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>
+                            Bien hecho, el borde de la red le ofrece una gran cantidad de conocimientos
+                            sobre lo que está sucediendo en su organización. La nueva red, desarrollada
+                            por la arquitectura de red digital de Cisco (Cisco DNA), le brinda información
+                            detallada sobre sus usuarios, los dispositivos que utilizan y las aplicaciones a
+                            las que acceden, todo con la capacidad de aprender y adaptarse a los cambios
+                            y necesidades de la red.
+                        </p>
                     </div>
                 </div>
 
@@ -33,7 +47,13 @@ class Accordion extends Component {
                         LA EVOLUCIÓN DE LA AUTOMATIZACIÓN
                     </label>
                     <div className="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>
+                            Más usuarios. Más dispositivos. Más ubicaciones para gestionar. Más de todo significa
+                            que la automatización es más crítica que nunca. Diseñe, proporcione y aplique
+                            políticas fácilmente a su red. La virtualización de la red lo ayuda a administrar las
+                            redes y políticas por tipo de usuario, lo que permite lanzamientos rápidos y
+                            detección de amenazas más rápida.  
+                        </p>
                     </div>
                 </div>
 
@@ -43,7 +63,12 @@ class Accordion extends Component {
                         TRANSFORMAR EXPERIENCIAS MÓVILES
                     </label>
                     <div className="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <p>
+                            Su organización prospera en la conectividad. Cisco es el único proveedor que se une
+                            a Apple para ofrecer una mejor experiencia móvil basada en Wi-Fi y roaming
+                            optimizados. Con la nueva red, estamos facilitando el control y la mejora de las
+                            experiencias de los clientes y empleados.
+                        </p>
                     </div>
                 </div>
 

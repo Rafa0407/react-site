@@ -12,7 +12,7 @@ class Cloud extends Component {
             <div className="techSectionContainer">
                 <div className="techSectionHeader">
                     <div className="techSectionHeaderImage">
-                        <img alt="securityLogo" src={colaboracion} className="techSectionHeaderLogo"></img>
+                        <img alt="cloudLogo" src={colaboracion} className="techSectionHeaderLogo"></img>
                     </div>
                     <div className="techSectionHeaderText">
                         <h1>Soluciones de nube</h1>
@@ -51,7 +51,11 @@ class Cloud extends Component {
                         CloudCenter 4.9 ahora incluye compatibilidad nativa con Kubernetes y
                         Azure Stack.    
                     </p>
-                    
+                    <div className="techBtnContainer">
+                        <a className="linkBtn" href="https://www.cisco.com/c/es_mx/solutions/cloud/overview.html" target="_blank">
+                            Ver más
+                        </a>
+                    </div>
                 </div>
             </div>
         );
