@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 /*Styles*/
-import '../contact/contact.style.css';
+import '../contact/contact.style.css'; 
+
+import logito from '../../../public/images/logito.png';
 
 class Contact extends Component {
   state = {
@@ -16,9 +18,12 @@ class Contact extends Component {
     buttonText: 'Enviar Mensaje'
   }
   
+  handleCheck = () => {
+      this.setState({checked: !this.state.checked});
+      console.log(this.checked);
+  }
   formSubmit = (e) => {
     e.preventDefault()
-
     this.setState({
         buttonText: '...enviando'
     })
@@ -31,12 +36,21 @@ class Contact extends Component {
         message: this.state.message,
         architecture: this.state.architecture
     }
-
-    axios.post('http://localhost:3002/send', data) // API URL... change this for the production URL.... 
+    console.log(data);
+    axios({
+        method: 'post',
+        url: 'http://vinet.co.cr/mailsender/public/email/send',
+        data: data, 
+        headers: {
+          'content-type': 'application/json;charset=utf-8'
+        }
+      }) 
     .then( res => {
+        console.log(res);
         this.setState({ sent: true }, this.resetForm())
     })
-    .catch( () => {
+    .catch( (err) => {
+      console.log(err);
       this.setState({
         buttonText: 'no se pudo enviar'
     })
@@ -51,7 +65,7 @@ class Contact extends Component {
         companyName: '',
         message: '',
         architecture: '',
-        buttonText: 'Mensaje enviado'
+        buttonText: 'Mensaje enviado', 
     })
   }
   
@@ -70,23 +84,89 @@ class Contact extends Component {
                         <input onChange={e => this.setState({ name: e.target.value})} name="name" className="inputContainer" type="text" maxLength="20" placeholder="Su nombre" required value={this.state.name}/>
 
                         <label className="inputLabel" htmlFor="message-phone">Teléfono</label>
-                        <input onChange={e => this.setState({ phone: e.target.value})} name="phone" className="inputContainer" type="text" maxLength="10" placeholder="Su teléfono" required value={this.state.phone}/>
+                        <input onChange={e => this.setState({ phone: e.target.value})} name="phone" className="inputContainer" type="text" maxLength="8" placeholder="Su teléfono" required value={this.state.phone}/>
 
                         <label className="inputLabel" htmlFor="message-email">Email</label>
-                        <input onChange={(e) => this.setState({ email: e.target.value})} name="email" className="inputContainer" type="email" maxLength="25" placeholder="your@email.com" required value={this.state.email} />
+                        <input onChange={(e) => this.setState({ email: e.target.value,  checked: !this.state.checked})} name="email" className="inputContainer" type="email" maxLength="25" placeholder="your@email.com" required value={this.state.email} />
 
                         <label className="inputLabel" htmlFor="message-company">Empresa</label>
                         <input onChange={e => this.setState({ companyName: e.target.value})} name="companyName" className="inputContainer" type="text" maxLength="25" placeholder="Nombre empresa"  required value={this.state.companyName}/>
 
                         <label  className="inputLabel" htmlFor="message-input">Mensaje</label>
                         <textarea onChange={e => this.setState({ message: e.target.value})} name="message" className="inputContainer" type="text" maxLength="400" placeholder="¡Escribe tu mensaje!" required value={this.state.message} />
-
+                        
+                        <label  className="inputLabel" htmlFor="message-arch">Elija una arquitectura de su interés</label>
+                        
+                        <div className="checkboxContainer" id="radioGroup">
+ 
+                            <div className="checkColumn">
+                              <label>
+                                <input required type="radio" name="radioGroup" 
+                                value="Seguridad"
+                                checked={this.state.architecture === 'Seguridad'}
+                                onChange={e => this.setState({ architecture: e.target.value})} 
+                                />
+                                Seguridad
+                              </label>
+                              <label>
+                                <input required type="radio" name="radioGroup" 
+                                value="Nube"
+                                checked={this.state.architecture === 'Nube'}
+                                onChange={e => this.setState({ architecture: e.target.value})} 
+                                />
+                                Nube
+                              </label>
+                              <label>
+                                <input required type="radio" name="radioGroup" 
+                                value="Colaboración"
+                                checked={this.state.architecture === 'Colaboración'}
+                                onChange={e => this.setState({ architecture: e.target.value})} 
+                                />
+                                Colaboración
+                              </label>
+                              <label>
+                                <input required type="radio" name="radioGroup" 
+                                value="Centro de redes"
+                                checked={this.state.architecture === 'Centro de redes'}
+                                onChange={e => this.setState({ architecture: e.target.value})} 
+                                />
+                                Centro de redes
+                              </label>
+                              </div>
+                            <div className="checkColumn">
+                              <label>
+                                <input type="radio" name="radioGroup" 
+                                value="Redes inhalambricas"
+                                checked={this.state.architecture === 'Redes inhalambricas'}
+                                onChange={e => this.setState({ architecture: e.target.value})} 
+                                />
+                                Redes inhalambricas y movilidad
+                              </label>
+                              <label>
+                                <input type="radio" name="radioGroup" 
+                                value="Redes"
+                                checked={this.state.architecture === 'Redes'}
+                                onChange={e => this.setState({ architecture: e.target.value})} 
+                                />
+                                Redes
+                              </label>
+                              <label>
+                                <input type="radio" name="radioGroup"  
+                                value="Consultoria Avanzada"
+                                checked={this.state.architecture === 'Consultoria Avanzada'}
+                                onChange={e => this.setState({ architecture: e.target.value})}
+                                />
+                                Consultoria avanzada
+                              </label>
+                            </div>
+                        </div>
                         <div className="FormButton-container">
                         <button type="submit" className="Formbutton">{ this.state.buttonText }</button>
                         </div>
                     </form>
                   </div>
-                  <div className="contactsContainer">
+                  <div className="contactsContainer"> 
+                    <p>Chosed: {this.state.architecture}</p>
                     <div className="contactItem">
                       <h1>Costa Rica</h1>
                       <a href="tel:+50622342682"><p>+(506) 2234 2682</p></a> 
@@ -108,3 +188,9 @@ class Contact extends Component {
 }
 
 export default Contact;
+
+/*
+<div className="btnFloat">
+<a id="floatBtn" href=""><img alt="floatBtnImage" className="floatBtnImage"  src={logito}></img></a>
+</div>
+*/

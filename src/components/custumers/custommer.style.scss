@@ -101,7 +101,7 @@
         margin: auto;
     }
     .custommer-item {
-        padding: 16px;
+        padding: 20px;
         width: 11vw;
         height: 85px;
     }
@@ -155,6 +155,9 @@
     .carousel.carousel-slider {
         margin: auto !important;
     }
+    .carousel .thumbs-wrapper {
+        margin: 10px;
+    }
   @media all and (max-width: 564px) {
     .carousel .control-dots .dot {
         background: black !important;
@@ -167,7 +170,7 @@
         background: white !important;
     }
     .carousel .slide img {
-        width: 85%
+        width: 85% !important;
     }
     .carousel .slider-wrapper {
         width: 80%;

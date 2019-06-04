@@ -80,7 +80,41 @@
       width: 40vw;
   }
 
+.radioContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .checkboxContainer{
+    display: flex;
+    flex-flow: row;
+    max-width: 100%;
+    .checkColumn{
+        display: flex;
+        flex-flow: column;
+    }
+  }
+
+  .btnFloat {
+      position: sticky;
+      top: 0px;
+      img {
+        object-fit: cover;
+        width: 60px; 
+        height: auto;
+      }
+  }
   @media all and (max-width: 796px) {
+    .checkboxContainer{
+        flex-flow: column;
+      }
     .contactHeader{
         padding: 30px;
     }
@@ -98,6 +132,11 @@
     .contactItem p{
         font-size: 0.7em;
     }
+    .contact-form{
+        display: flex;
+        flex-flow: column;
+        width: 40vw;
+    }
   }
 
   @media all and (max-width: 500px) {
@@ -112,7 +151,7 @@
         font-size: 2em;
     }
     .contact-form{
-        width: 50vw;
+        width: 72vw;
     }
     .contact-form > .inputLabel {
         font-size: 1em;
