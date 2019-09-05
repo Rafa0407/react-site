@@ -1,0 +1,80 @@
+.partnerSection {
+  background-color: white; 
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.partnerHeader{
+    display: flex;
+    flex-flow: row;
+    max-width: 100%;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    padding-top: 20px;
+}
+.partnerHeader h1{
+    margin: auto;
+    font-size: 3.5em;
+} 
+.carouselContainer{
+  
+}
+@media all and (max-width: 900px) {
+  .partnerHeader {
+    flex-flow: column;
+    text-align: center;
+    max-width: 100%;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+  }
+  .partnerHeader h1 {
+    margin: 0px;
+  }
+}
+
+.slider-slide > img {
+    width: 60% !important;
+    display: block;
+    margin: auto;
+}
+@media all and (max-width: 600px) {
+  .slider-slide > img {
+    width: 40% !important;
+    display: block !important;
+    margin: auto !important;
+  }
+  .slider-slide {
+    width: 100%;
+    margin: 80px;
+  }
+  .partnerSection{
+    height: 70vh;
+  }
+  .carouselContainer {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    height: 60vh;
+  }
+  .partnerHeader h1{
+    margin: auto;
+    font-size: 1.5em;
+}
+}
+
+.carImg img {
+  width: 30% !important;
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}

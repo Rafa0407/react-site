@@ -14,7 +14,7 @@ class NetworkCenter extends Component {
                         <img alt="securityLogo" src={netCenter} className="techSectionHeaderLogo"></img>
                     </div>
                     <div className="techSectionHeaderText">
-                        <h1>Centro de redes</h1>
+                        <h1>Centro de datos</h1>
                         <p>
                             Construya un centro de datos que se vuelva más
                             inteligente cada día.

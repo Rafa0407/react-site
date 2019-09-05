@@ -19,7 +19,7 @@ class SlideShow extends Component {
 
         let card1 = {
             slideParagraph: 'Vinet es el socio tecnológico para potenciar la transformación digital, en su compañía.', 
-            btnText: 'Sucsess Team', 
+            btnText: 'Success Team', 
             sliderImage: sliderImage1, 
             linkTo: '/#team'
         }

@@ -10,6 +10,7 @@ import Experience from '../experience/experience.component';
 import Custommers from '../custumers/custommers.component';
 import ContactUs from '../contact/contact.component'; 
 import Footer from '../footer/footer.component';
+import Partners from '../partners/partners.component';
 
 class HomeComponent extends Component {
   render() {
@@ -18,6 +19,7 @@ class HomeComponent extends Component {
             <Slider />
             <TechPreview />
             <Experience />
+            <Partners/>
             <Custommers />
             <ContactUs />
             <Footer />

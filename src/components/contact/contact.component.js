@@ -20,7 +20,7 @@ class Contact extends Component {
   
   handleCheck = () => {
       this.setState({checked: !this.state.checked});
-      console.log(this.checked);
+      // console.log(this.checked);
   }
   formSubmit = (e) => {
     e.preventDefault()
@@ -36,21 +36,21 @@ class Contact extends Component {
         message: this.state.message,
         architecture: this.state.architecture
     }
-    console.log(data);
+    // console.log(data);
     axios({
         method: 'post',
-        url: 'http://vinet.co.cr/mailsender/public/email/send',
+        url: 'https://vinet.co.cr/mailsender/public/email/send',
         data: data, 
         headers: {
           'content-type': 'application/json;charset=utf-8'
         }
       }) 
     .then( res => {
-        console.log(res);
+        // console.log(res);
         this.setState({ sent: true }, this.resetForm())
     })
     .catch( (err) => {
-      console.log(err);
+      // console.log(err);
       this.setState({
         buttonText: 'no se pudo enviar'
     })
@@ -166,7 +166,6 @@ class Contact extends Component {
                     </form>
                   </div>
                   <div className="contactsContainer"> 
-                    <p>Chosed: {this.state.architecture}</p>
                     <div className="contactItem">
                       <h1>Costa Rica</h1>
                       <a href="tel:+50622342682"><p>+(506) 2234 2682</p></a> 

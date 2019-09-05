@@ -179,7 +179,7 @@
         .slideImage{
           max-width: 100%;
           object-fit: cover;
-          width: 65vw;
+          width: 80vw;
           height: auto;
         }
         .mapImage {
@@ -210,12 +210,12 @@
         }
       }
       .imageContainer{
-        flex-basis: 80% ;
+        flex-basis: 70% ;
         align-content: center;
         .slideImage{
           max-width: 100%;
           object-fit: cover;
-          width: 90vw;
+          width: 100vw;
           height: auto;
         }
         .mapImage {

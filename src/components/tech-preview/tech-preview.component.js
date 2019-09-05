@@ -13,58 +13,60 @@ import redesInhalambricas from '../../../public/images/logo-de-sennal.png';
 
 class TechPreview extends Component {
     render = () => {
-        let techCards = [
-            {
+        let techCards = [{
                 image: redes,
                 title: "Redes",
-                pharagrap: "Basadas en intención y creadas a partir de Cisco DNA.",
+                pharagrap: "Intuitivas e inteligentes creadas a partir de Cisco DNA.",
                 cardLink: "/tech/network"
             },
             {
                 image: seguridad,
                 title: "Seguridad",
-                pharagrap: "Detecte y detenga las amenazas de manera más eficaz con nuestros productos de ciberseguridad.",
+                pharagrap: "Detecte y detenga las amenazas de manera más eficiente con nuestros productos de ciberseguridad.",
                 cardLink: "/tech/security"
             },
             {
                 image: nube,
                 title: "Nube",
-                pharagrap: "Posibilite un mundo multinube.",
+                pharagrap: "Aumente la eficiencia operativa y reduzca el costo total de propiedad.",
                 cardLink: "/tech/cloud"
             },
             {
                 image: consultoria,
-                title: "Consultoría avanzada",
-                pharagrap: "Posibilite un mundo multinube.",
+                title: "Consultoría personalizada",
+                pharagrap: "Basada en necesidades del negocio y tendencias de la industria.",
                 cardLink: "/tech/consulting"
             },
             {
                 image: colaboracion,
                 title: "Colaboración",
-                pharagrap: "Las nuevas innovaciones que cambian la forma en que colaboran los equipos",
+                pharagrap: "Las innovaciones tecnológicas que cambian la forma en que se comunican las personas",
                 cardLink: "/tech/colaboration"
             },
             {
                 image: datos,
-                title: "Centro de redes",
-                pharagrap: "Activado por metas. Informado por contexto. Proporcionado en múltiples nubes.",
-                cardLink: "/tech/networkCenter"
+                title: "Centro de datos",
+                pharagrap: "Iaas, Monitoreo, Capacity Planning, Multicliente.",
+                cardLink: "/tech/dataCenter"
             },
             {
                 image: redesInhalambricas,
                 title: "Redes inalámbricas y movilidad",
-                pharagrap: "Viaje al pasado con DNA Center Assurance.",
+                pharagrap: "Movilidad y flexibilidad de espacios de trabajo.",
                 cardLink: "/tech/wirlessNetwork"
             }
         ]
-        return (
-            <section className="techPreviewSection" id="tech">
-                <ul className="techContainer">
-                        {techCards.map((cards, index) =>
-                            <li className="tech-item" key={cards.title + "-" + index}><TechCard techCardInfo={cards} /></li>
-                        )} 
-                </ul>
-            </section>
+        return ( 
+        <section className = "techPreviewSection" id = "tech" >
+            <ul className = "techContainer" > {
+                techCards.map((cards, index) =>
+                    <
+                    li className = "tech-item"
+                    key = { cards.title + "-" + index } > < TechCard techCardInfo = { cards }
+                    /></li >
+                )
+            } </ul>      
+        </section>
         )
     }
 }

@@ -36,43 +36,43 @@ class AsideNav extends Component {
                                 <p>Inicio</p>
                             </div>
                         </a > 
-                        <NavLink activeClassName="active" to="/tech/security">
+                        <NavLink activeClassName="navActive" to="/tech/security">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={seguridad}></img>
                                 <p> Seguridad </p>
                             </div>
                         </NavLink> 
-                        <NavLink activeClassName="active" to="/tech/cloud">
+                        <NavLink activeClassName="navActive" to="/tech/cloud">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={nube}></img>
                                 <p>Nube</p>
                             </div>
                         </NavLink> 
-                        <NavLink activeClassName="active" to="/tech/colaboration">
+                        <NavLink activeClassName="navActive" to="/tech/colaboration">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={colaboracion}></img>
                                 <p>Colaboración</p>
                             </div>
                         </NavLink> 
-                        <NavLink activeClassName="active" to="/tech/networkCenter">
+                        <NavLink activeClassName="navActive" to="/tech/dataCenter">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={datos}></img>
                                 <p>Centro de redes</p>
                             </div>
                         </NavLink> 
-                        <NavLink activeClassName="active" to="/tech/wirlessNetwork">
+                        <NavLink activeClassName="navActive" to="/tech/wirlessNetwork">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={redesInhalambricas}></img>
                                 <p>Redes inhalambricas</p>
                             </div>
                         </NavLink> 
-                        <NavLink activeClassName="active" to="/tech/network">
+                        <NavLink activeClassName="navActive" to="/tech/network">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={redes}></img>
                                 <p>Redes</p>
                             </div>
                         </NavLink> 
-                        <NavLink activeClassName="active" to="/tech/consulting">
+                        <NavLink activeClassName="navActive" to="/tech/consulting">
                             <div className="asideItems">
                                 <img alt="asideImage" className="asideImage" src={consultoria}></img>
                                 <p>Consultoria</p> 
@@ -84,7 +84,7 @@ class AsideNav extends Component {
                     <Route path={"/tech/security"} component={Security} />
                     <Route path={"/tech/colaboration"} component={Colaboration} />
                     <Route path={"/tech/cloud"} component={Cloud} />
-                    <Route path={"/tech/networkCenter"} component={NetworkCenter} />
+                    <Route path={"/tech/dataCenter"} component={NetworkCenter} />
                     <Route path={"/tech/wirlessNetwork"} component={WirelessNetwork} />
                     <Route path={"/tech/consulting"} component={Consulting} />
                     <Route path={"/tech/network"} component={Network} />

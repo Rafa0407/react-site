@@ -10,7 +10,7 @@ import bccrLogo from '../../../public/images/logo-bccr.png';
 import coseviLogo from '../../../public/images/logo-cosevi.png'; 
 import cimaLogo from '../../../public/images/logo-cima.png'; 
 import mucapLogo from '../../../public/images/logo-mucap.png'; 
-import iceLogo from '../../../public/images/logo-ice.png'; 
+// import iceLogo from '../../../public/images/logo-ice.png'; 
 import daviviendaLogo from '../../../public/images/logo-davivienda.png'; 
 import ctpLogo from '../../../public/images/logo-ctp.png'; 
 
@@ -20,6 +20,9 @@ class Custommers extends Component {
         return(
             <section className="custommerSection">
                 <div>
+                    <div className="partnerHeader"> 
+                        <h1>Clientes</h1> 
+                    </div>
                     <ul className="custommerContainer">
                         <li className="custommer-item column1 " >
                             <img alt={"costummerLogo"} className="custommerImage" src={ alingnLogo }></img>
@@ -35,9 +38,6 @@ class Custommers extends Component {
                         </li>
                         <li className="custommer-item column2" >
                             <img alt={"costummerLogo"} className="custommerImage" src={ mucapLogo }></img>
-                        </li>
-                        <li className="custommer-item column2" >
-                            <img alt={"costummerLogo"} className="custommerImage" src={ iceLogo }></img>
                         </li>
                         <li className="custommer-item column2" >
                             <img alt={"costummerLogo"} className="custommerImage" src={ daviviendaLogo }></img>
@@ -64,9 +64,6 @@ class Custommers extends Component {
                     </div>
                     <div>
                         <img alt="custommerLogo" src={mucapLogo} />
-                    </div>
-                    <div>
-                        <img alt="custommerLogo" src={iceLogo} />
                     </div>
                     <div>
                         <img alt="custommerLogo" src={daviviendaLogo} />
