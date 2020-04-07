@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../partners/partners.style.css'; 
-import Carousel from 'nuka-carousel';
+import PartnerCard from '../partners/partnersCard/partnerCard.component';
 
 
 import '../experience/experience.style.css';
@@ -15,23 +15,28 @@ import dellemc from '../../../public/images/dellemc.jpeg';
 import microsoft from '../../../public/images/microsoft.jpeg';  
 
 class Partners extends Component {
-  render() { 
 
+  render() { 
+    const partners = [
+      {id: 1, image: cisco, name: "Cisco"},
+      {id: 2, image: citrix, name: "Citrix"},
+      {id: 3, image: veeam, name: "Veam"},
+      {id: 4, image: vmware, name: "VMware"},
+      {id: 5, image: purestorage, name: "Purestorage"},
+      {id: 6, image: dellemc, name: "DELL Emc"},
+      {id: 7, image: microsoft, name: "Microsoft"}
+    ]; 
     return (
       <section className="partnerSection" id="partner">
         <div className="partnerHeader"> 
             <h1>Partners</h1> 
         </div>
-        <div className="carouselContainer">
-         <Carousel  width="100%" cellAlign="center" autoplay="true" speed="2000" slidesToShow="4">
-            <img src={cisco}  className="carImg"/>
-            <img src={citrix} className="carImg"/>
-            <img src={veeam} className="carImg"/>
-            <img src={vmware} className="carImg"/>
-            <img src={purestorage} className="carImg"/>
-            <img src={dellemc} className="carImg"/>
-            <img src={microsoft} className="carImg"/>
-          </Carousel> 
+        <div className="partnerCardContainer">
+          {
+            partners.map((item, key) =>
+                <PartnerCard key={key} PartnerImage={item.image}></PartnerCard>
+            )
+          }
         </div>
       </section>
     );

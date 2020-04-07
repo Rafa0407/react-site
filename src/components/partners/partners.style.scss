@@ -14,15 +14,20 @@
     width: 50%;
     height: 50px;
     margin: auto;
-    padding-top: 20px;
+    padding: 20px;
 }
 .partnerHeader h1{
     margin: auto;
-    font-size: 3.5em;
+    font-size: 3em;
 } 
-.carouselContainer{
-  
+.partnerCardContainer{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90vw;
 }
+
 @media all and (max-width: 900px) {
   .partnerHeader {
     flex-flow: column;
@@ -43,38 +48,14 @@
     margin: auto;
 }
 @media all and (max-width: 600px) {
-  .slider-slide > img {
-    width: 40% !important;
-    display: block !important;
-    margin: auto !important;
-  }
-  .slider-slide {
-    width: 100%;
-    margin: 80px;
-  }
-  .partnerSection{
-    height: 70vh;
-  }
-  .carouselContainer {
-    display: flex;
-    justify-content: center;
-    width: 100% !important;
-    height: 60vh;
-  }
   .partnerHeader h1{
     margin: auto;
     font-size: 1.5em;
 }
 }
-
 .carImg img {
   width: 30% !important;
   width: 70%;
   display: block;
   margin: auto;
-}
-.carouselContainer {
-  display: flex;
-  justify-content: center;
-  width: 70%;
 }

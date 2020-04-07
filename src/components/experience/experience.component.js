@@ -9,43 +9,53 @@ class Experience extends Component {
     let experienceAreas = [
       {
         title: 'Salud', 
-        backgroundColor: '#e0e0e0'
+        backgroundColor: '#e0e0e0', 
+        link: "/experience#Salud"
       },
       {
         title: 'Hotelería', 
-        backgroundColor: '#f0c936' 
+        backgroundColor: '#f0c936', 
+        link: "/experience#Hotelería"
       },
       {
         title: 'Agro', 
-        backgroundColor: '#3e6aaf'
+        backgroundColor: '#3e6aaf',
+        link: "/experience#Agro"
       },
       {
         title: 'Banca', 
-        backgroundColor: '#f74f68'
+        backgroundColor: '#f74f68',
+        link: "/experience#Banca"
       },
       {
         title: 'Alimentos', 
-        backgroundColor: '#e0e0e0'
+        backgroundColor: '#e0e0e0',
+        link: "/experience#Alimentos"
       },
       {
         title: 'Construcción', 
-        backgroundColor: '#f0c936'
+        backgroundColor: '#f0c936',
+        link: "/experience#Construcción"
       },
       {
         title: 'Oficinas', 
-        backgroundColor: '#f74f68'
+        backgroundColor: '#f74f68',
+        link: "/experience#Oficinas"
       },
       {
         title: 'Manufactura', 
-        backgroundColor: '#e0e0e0'
+        backgroundColor: '#e0e0e0',
+        link: "/experience#Manufactura"
       },
       {
         title: 'Gobierno', 
-        backgroundColor: '#f0c936'
+        backgroundColor: '#f0c936',
+        link: "/experience#Gobierno"
       },
       {
         title: 'Retail', 
-        backgroundColor: '#3e6aaf'
+        backgroundColor: '#3e6aaf',
+        link: "/experience#Retail"
       }
     ]
     return (

@@ -15,7 +15,7 @@ class Footer extends Component {
             <div className="teamFooter">
                 <div className="footerLogoContainer">
                     <img className="vinetLogo" alt="vinetLogo" src={ vinetLogo }></img>
-                    <p className="year">2019</p>
+                    <p className="year">2020</p>
                 </div>
             </div>
         </section>

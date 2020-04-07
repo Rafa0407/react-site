@@ -9,7 +9,7 @@ import '../navbar/NavBar.style.css';
 import HomeComponent from "../home/home.component";
 import TechComponent from '../tech/techContainer.component';
 import notFound from '../notFound/notFound.component'; 
-
+import ExperienceInformation from '../experienceInformation/experienceInformation.component';
 
 
 
@@ -38,6 +38,7 @@ class NavBar extends Component {
                 <Switch>
                     <Route exact={true} path="/" component={HomeComponent} />
                     <Route path="/tech" component={TechComponent} />
+                    <Route path="/experience" component={ExperienceInformation} />
                     <Route component={notFound} />
                 </Switch>
             </div>
@@ -45,11 +46,3 @@ class NavBar extends Component {
     }
 };
 export default withRouter(NavBar);
-
-
-/* 
-                        <a href={`${this.props.location.pathname}#home`} className="linkTo" >Inicio </a>
-                        <a href={`${this.props.location.pathname}#tech`} className="linkTo">Tecnologías</a>
-                        <a href={`${this.props.location.pathname}#experience`} className="linkTo" >Experiencia</a>
-                        <a href={`${this.props.location.pathname}#contactus`} className="linkTo" >Contácto</a>
-*/

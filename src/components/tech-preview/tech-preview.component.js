@@ -57,12 +57,12 @@ class TechPreview extends Component {
             }
         ]
         return ( 
-        <section className = "techPreviewSection" id = "tech" >
-            <ul className = "techContainer" > {
+        <section className="techPreviewSection" id="tech" >
+            <ul className="techContainer" > {
                 techCards.map((cards, index) =>
                     <
                     li className = "tech-item"
-                    key = { cards.title + "-" + index } > < TechCard techCardInfo = { cards }
+                        key={ cards.title + "-" + index } > < TechCard techCardInfo = { cards }
                     /></li >
                 )
             } </ul>      

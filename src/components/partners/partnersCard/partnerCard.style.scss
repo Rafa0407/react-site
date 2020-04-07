@@ -1,43 +1,32 @@
-.expAreasContainer{
+.partnerImageContainer{
     padding: 4px;
     width: 240px;
     height: 180px;
     text-align: center;
 }
 
-.expAreasContainer h1{
-    line-height: 150px;
-    font-size: 2em;
+.partnerImage{
+    object-fit: cover;
+    max-width: 100%;
 }
-.ExphBtn{
-    text-decoration: none;
-}
-.ExphBtn:visited{
-    color: #364066;
-}
+
+
+
 @media all and (max-width: 1254px) {
-    .expAreasContainer{
+    .partnerImageContainer{
         padding: 2px;
         width: 150px;
         height: 150px;
         text-align: center;
     }
-    .expAreasContainer h1{
-        line-height: 170px;
-        font-size: 1.4em;
-    }
   }
 
   @media all and (max-width: 810px) {
-    .expAreasContainer{
+    .partnerImageContainer{
         padding: 5px;
         width: 120px;
         height: 120px;
         text-align: center;
-    }
-    .expAreasContainer h1{
-        line-height: 55px;
-        font-size: 1.1em;
     }
   }
 
@@ -48,10 +37,6 @@
         height: 90px;
         text-align: center;
     }
-    .expAreasContainer h1{
-        line-height: 55px;
-        font-size: 0.9em;
-    }
   }
 
   @media all and (max-width: 400px) {
@@ -61,13 +46,4 @@
         height: 75px;
         text-align: center;
     }
-    .expAreasContainer h1{
-        line-height: 55px;
-        font-size: 0.8em;
-    }
-  }
-
-
-  .expAreasContainer:hover{
-    transform: scale(1.1);
   }
