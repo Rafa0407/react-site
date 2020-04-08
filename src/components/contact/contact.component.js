@@ -4,8 +4,6 @@ import axios from 'axios';
 /*Styles*/
 import '../contact/contact.style.css'; 
 
-import logito from '../../../public/images/logito.png';
-
 class Contact extends Component {
   state = {
     name: '',
@@ -20,7 +18,6 @@ class Contact extends Component {
   
   handleCheck = () => {
       this.setState({checked: !this.state.checked});
-      // console.log(this.checked);
   }
   formSubmit = (e) => {
     e.preventDefault()
@@ -187,9 +184,3 @@ class Contact extends Component {
 }
 
 export default Contact;
-
-/*
-<div className="btnFloat">
-<a id="floatBtn" href=""><img alt="floatBtnImage" className="floatBtnImage"  src={logito}></img></a>
-</div>
-*/

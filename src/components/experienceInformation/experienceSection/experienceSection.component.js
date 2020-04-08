@@ -15,7 +15,7 @@ class ExperienceSection extends Component {
             <p>{this.props.ExpCard.text}</p>
           </div>
           <div className="ExpInfoCardContentImg">
-            <img src={this.props.ExpCard.image}></img>
+            <img atl={this.props.ExpCard.title} src={this.props.ExpCard.image}></img>
           </div>
         </div>
         <div className="brandContainer">
