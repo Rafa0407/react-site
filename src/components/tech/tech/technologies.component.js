@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-
 import AsideNav from  '../AsideNav/asideNav';
 import '../tech/technologies.style.css';
 

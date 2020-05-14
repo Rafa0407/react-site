@@ -11,9 +11,10 @@ import citrix from '../../../public/images/citrix.jpeg';
 import veeam from '../../../public/images/veeam.jpeg'; 
 import vmware from '../../../public/images/vmware.jpeg'; 
 import purestorage from '../../../public/images/purestorage.jpeg'; 
-import dellemc from '../../../public/images/dellemc.jpeg';  
-import microsoft from '../../../public/images/microsoft.jpeg';  
-
+//import dellemc from '../../../public/images/dellemc.jpeg';  
+//import microsoft from '../../../public/images/microsoft.jpeg';  
+//{id: 6, image: dellemc, name: "DELL Emc"},
+//{id: 7, image: microsoft, name: "Microsoft"}
 class Partners extends Component {
 
   render() { 
@@ -23,8 +24,7 @@ class Partners extends Component {
       {id: 3, image: veeam, name: "Veam"},
       {id: 4, image: vmware, name: "VMware"},
       {id: 5, image: purestorage, name: "Purestorage"},
-      {id: 6, image: dellemc, name: "DELL Emc"},
-      {id: 7, image: microsoft, name: "Microsoft"}
+
     ]; 
     return (
       <section className="partnerSection" id="partner">

@@ -10,7 +10,7 @@ import HomeComponent from "../home/home.component";
 import TechComponent from '../tech/techContainer.component';
 import notFound from '../notFound/notFound.component'; 
 import ExperienceInformation from '../experienceInformation/experienceInformation.component';
-
+import LandingComponent from '../landing/'
 
 
 /*External imports*/
@@ -27,18 +27,18 @@ class NavBar extends Component {
                         </HashLink>
                     </div>
                     <div className="topnav"> 
-
                         <HashLink smooth to="/#home" className="linkTo" >Inicio</HashLink>
                         <HashLink smooth to="/#tech" className="linkTo" >Tecnologías</HashLink>
                         <HashLink smooth to="/#experience" className="linkTo">Experiencia</HashLink>
-                        <HashLink smooth to="/#contactus" className="linkTo">Contácto</HashLink>
-
+                        <HashLink smooth to="/#contactus" className="linkTo">Contacto</HashLink>
+                        <HashLink smooth to="/landing" className="linkTo" target="_blank">Landing</HashLink>
                     </div>
                 </div>
                 <Switch>
                     <Route exact={true} path="/" component={HomeComponent} />
                     <Route path="/tech" component={TechComponent} />
                     <Route path="/experience" component={ExperienceInformation} />
+                    <Route path="/landing" component={LandingComponent} />
                     <Route component={notFound} />
                 </Switch>
             </div>

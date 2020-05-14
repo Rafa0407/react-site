@@ -137,7 +137,7 @@ class Contact extends Component {
                                 checked={this.state.architecture === 'Redes inhalambricas'}
                                 onChange={e => this.setState({ architecture: e.target.value})} 
                                 />
-                                Redes inhalambricas y movilidad
+                                Redes inalámbricas y movilidad
                               </label>
                               <label>
                                 <input type="radio" name="radioGroup" 

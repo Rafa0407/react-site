@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import './home.style.css';
 
 /*components */
-import Slider from './slider/slider.component';
+import Slider from '../slider/slider.component';
 import TechPreview from '../tech-preview/tech-preview.component';
 import Experience from '../experience/experience.component';
 import Custommers from '../custumers/custommers.component';

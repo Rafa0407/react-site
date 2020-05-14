@@ -5,7 +5,7 @@ class PartnerCard extends Component {
     render(){
         return(
             <div className="partnerImageContainer">
-                <img src={this.props.PartnerImage} className="partnerImage"></img>
+                <img alt="partner" src={this.props.PartnerImage} className="partnerImage"></img>
             </div>
             
         );

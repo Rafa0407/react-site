@@ -23,58 +23,104 @@ import colaboracion from "../../public/images/logo-de-manos.png";
 import datos from "../../public/images/logo-de-unidad.png";
 import redesInhalambricas from "../../public/images/logo-de-sennal.png";
 
+// slider images 
+
+import sliderImage1 from '../../public/images/slider1.png'; 
+import sliderImage2 from '../../public/images/slider2.png';  
+import sliderImage3 from '../../public/images/slider3.png';  
+import sliderImage4 from '../../public/images/slider4.png';  
+
+// changes the experience links later
 export const experienceAreas = [
       {
         title: 'Salud', 
         backgroundColor: '#e0e0e0', 
-        link: "/experience#Salud"
+        link: "#"
+        //link: "/experience#Salud"
+
       },
       {
         title: 'Hotelería', 
         backgroundColor: '#f0c936', 
-        link: "/experience#Hotelería"
+        //link: "/experience#Hotelería"
+        link: "#"
       },
       {
         title: 'Agro', 
         backgroundColor: '#3e6aaf',
-        link: "/experience#Agro"
+        //link: "/experience#Agro"
+        link: "#"
       },
       {
         title: 'Banca', 
         backgroundColor: '#f74f68',
-        link: "/experience#Banca"
+        // link: "/experience#Banca"
+        link: "#"
       },
       {
         title: 'Alimentos', 
         backgroundColor: '#e0e0e0',
-        link: "/experience#Alimentos"
+        // link: "/experience#Alimentos"
+        link: "#"
       },
       {
         title: 'Construcción', 
         backgroundColor: '#f0c936',
-        link: "/experience#Construcción"
+        // link: "/experience#Construcción"
+        link: "#"
       },
       {
         title: 'Oficinas', 
         backgroundColor: '#f74f68',
-        link: "/experience#Oficinas"
+        // link: "/experience#Oficinas"
+        link: "#"
       },
       {
         title: 'Manufactura', 
         backgroundColor: '#e0e0e0',
-        link: "/experience#Manufactura"
+        // link: "/experience#Manufactura"
+        link: "#"
       },
       {
         title: 'Gobierno', 
         backgroundColor: '#f0c936',
-        link: "/experience#Gobierno"
+        // link: "/experience#Gobierno"
+        link: "#"
       },
       {
         title: 'Retail', 
         backgroundColor: '#3e6aaf',
-        link: "/experience#Retail"
+        // link: "/experience#Retail"
+        link: "#"
       }
 ];
+
+export const sliderCards = [
+        {
+            slideParagraph: 'Vinet es el socio tecnológico para potenciar la transformación digital en su compañía.', 
+            btnText: 'Success Team', 
+            sliderImage: sliderImage1, 
+            linkTo: '/#partner'
+        },
+        {
+            slideParagraph: 'Su asesor de tecnología en Costa Rica y Nicaragua.', 
+            btnText: 'Call', 
+            sliderImage: sliderImage2, 
+            linkTo: 'tel:+50622342682'
+        },
+        {
+            slideParagraph: 'Experiencia para entregar tecnología segura escalable y sorprendente.', 
+            btnText: 'Tecnologías', 
+            sliderImage: sliderImage3, 
+            linkTo: '/#tech'
+        },
+        {
+            slideParagraph: 'Planificamos, diseñamos e implementamos soluciones sostenibles para la era digital.', 
+            btnText: 'Experiencia', 
+            sliderImage: sliderImage4,
+            linkTo: '/#experience'
+        }
+]
 export const experienceCards = [
       {
         title: "Salud",

@@ -22,15 +22,13 @@
     }
 }
 .footerLogoContainer{
-    width: 8vw;
+    width: 15vw;
     height: 10vh;
-    // bottom: 379px;
+    text-align: center;
     .vinetLogo{
         max-width: 100%; 
-        width: auto;
+        width: 10vw; 
         height: auto;
-        // bottom: 379px;
-        // position: relative;
     }
     .year {
         font-weight: bold;
@@ -42,14 +40,19 @@
 
 @media all and (max-width: 600px) {
     .teamFooter{
-        width: 104vw;
+        width: auto;
     }
     .footerImageContainer{
         width: 70vw;
       }
-
-    .footerLogoContainer{
-        width: 19vw;
-        height: 10vh;
+    .footerLogoContainer {
+        width: 50vw;
+    }
+    .footerLogoContainer .vinetLogo {
+        width: 25vw;
+    }
+    .footerLogoContainer .year {
+        margin: auto;
+        font-size: 15px;
     }
 }

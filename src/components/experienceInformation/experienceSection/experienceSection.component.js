@@ -15,12 +15,12 @@ class ExperienceSection extends Component {
             <p>{this.props.ExpCard.text}</p>
           </div>
           <div className="ExpInfoCardContentImg">
-            <img atl={this.props.ExpCard.title} src={this.props.ExpCard.image}></img>
+            <img alt={this.props.ExpCard.title} src={this.props.ExpCard.image}></img>
           </div>
         </div>
         <div className="brandContainer">
           {this.props.ExpCard.brandImgs.map((item, key) => (
-            <img key={key} atl={item.title} className="ExpInfoCardBrand" src={item.image}></img>
+            <img key={key} alt={item.title} className="ExpInfoCardBrand" src={item.image}></img>
           ))}                      
         </div>
       </section>

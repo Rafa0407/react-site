@@ -80,5 +80,5 @@
 @media all and (max-width: 400px) {
   .navBarContainer .logoContainer .menuLogo {
     object-fit: cover;
-    width: 150px;
-    height: 90px; } }
+    width: 130px;
+    height: 70px; } }
