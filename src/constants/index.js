@@ -98,7 +98,7 @@ export const experienceAreas = [
 export const sliderCards = [
         {
             slideParagraph: 'Vinet es el socio tecnológico para potenciar la transformación digital en su compañía.', 
-            btnText: 'Success Team', 
+            btnText: 'Partners', 
             sliderImage: sliderImage1, 
             linkTo: '/#partner'
         },

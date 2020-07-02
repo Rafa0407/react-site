@@ -11,6 +11,7 @@ import TechComponent from '../tech/techContainer.component';
 import notFound from '../notFound/notFound.component'; 
 import ExperienceInformation from '../experienceInformation/experienceInformation.component';
 import LandingComponent from '../landing/'
+import Posts from '../posts'
 
 
 /*External imports*/
@@ -35,7 +36,8 @@ class NavBar extends Component {
                     </div>
                 </div>
                 <Switch>
-                    <Route exact={true} path="/" component={HomeComponent} />
+                    <Route path="/" component={HomeComponent} />
+                    <Route path="/post" component={Posts} />
                     <Route path="/tech" component={TechComponent} />
                     <Route path="/experience" component={ExperienceInformation} />
                     <Route path="/landing" component={LandingComponent} />
