@@ -1,0 +1,61 @@
+.partnerSection {
+  background-color: white; 
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.partnerHeader{
+    display: flex;
+    flex-flow: row;
+    max-width: 100%;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    padding: 20px;
+}
+.partnerHeader h1{
+    margin: auto;
+    font-size: 3em;
+} 
+.partnerCardContainer{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90vw;
+}
+
+@media all and (max-width: 900px) {
+  .partnerHeader {
+    flex-flow: column;
+    text-align: center;
+    max-width: 100%;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+  }
+  .partnerHeader h1 {
+    margin: 0px;
+  }
+}
+
+.slider-slide > img {
+    width: 60% !important;
+    display: block;
+    margin: auto;
+}
+@media all and (max-width: 600px) {
+  .partnerHeader h1{
+    margin: auto;
+    font-size: 1.5em;
+}
+}
+.carImg img {
+  width: 30% !important;
+  width: 70%;
+  display: block;
+  margin: auto;
+}

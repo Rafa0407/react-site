@@ -1,0 +1,47 @@
+.experienceSection{
+    background-color: #f6f6f6; 
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.experienceHeader{
+    display: flex;
+    flex-flow: row;
+    max-width: 100%;
+    width: 50%;
+    height: 50px;
+    padding: 70px;
+} 
+.experienceHeader h1{
+    margin: auto;
+    margin-right: 20px;
+    font-size: 3em;
+} 
+
+@media all and (max-width: 900px) {
+    .experienceHeader {
+        flex-flow: column;
+        text-align: center;
+        max-width: 100%;
+        width: 50%;
+        height: 50px;
+        margin: auto;
+    }
+    .experienceHeader h1{
+        margin: 0px;
+  }
+}
+@media all and (max-width: 600px) {
+    .experienceSection{
+        display: none;
+    }
+}
+
+// cards 
+.cardExperienceContainer{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+

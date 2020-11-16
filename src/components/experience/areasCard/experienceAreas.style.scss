@@ -1,0 +1,73 @@
+.expAreasContainer{
+    padding: 4px;
+    width: 240px;
+    height: 180px;
+    text-align: center;
+}
+
+.expAreasContainer h1{
+    line-height: 150px;
+    font-size: 2em;
+}
+.ExphBtn{
+    text-decoration: none;
+}
+.ExphBtn:visited{
+    color: #364066;
+}
+@media all and (max-width: 1254px) {
+    .expAreasContainer{
+        padding: 2px;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+    }
+    .expAreasContainer h1{
+        line-height: 170px;
+        font-size: 1.4em;
+    }
+  }
+
+  @media all and (max-width: 810px) {
+    .expAreasContainer{
+        padding: 5px;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+    }
+    .expAreasContainer h1{
+        line-height: 55px;
+        font-size: 1.1em;
+    }
+  }
+
+@media all and (max-width: 689px) {
+    .expAreasContainer{
+        padding: 5px;
+        width: 90px;
+        height: 90px;
+        text-align: center;
+    }
+    .expAreasContainer h1{
+        line-height: 55px;
+        font-size: 0.9em;
+    }
+  }
+
+  @media all and (max-width: 400px) {
+    .expAreasContainer{
+        padding: 5px;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+    }
+    .expAreasContainer h1{
+        line-height: 55px;
+        font-size: 0.8em;
+    }
+  }
+
+
+  .expAreasContainer:hover{
+    transform: scale(1.1);
+  }

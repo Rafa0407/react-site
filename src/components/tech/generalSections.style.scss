@@ -1,0 +1,214 @@
+.techSectionContainer{
+    margin-top: 15px;
+    display: flex; 
+    flex-flow: column;
+    align-items: center;
+    width: 80vw;
+}
+.techSectionVideoContainer{
+    width: 45vw;
+    margin-top: 10px;
+    .techSectionVideo{
+        width: 100%;
+        height: 390px;
+    }
+}
+.techSectionHeader{
+    display: flex; 
+    flex-flow: row;
+    justify-content: center;
+}
+
+.techSectionHeaderImage{
+    max-width: 100%;
+    .techSectionHeaderLogo{
+        object-fit: cover;
+        width: 100px;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+.techSectionHeaderText{
+    flex-basis: 80%;
+    // background-color: #e0e0e0; 
+    text-align: left;
+}
+.techSectionHeaderText h1{
+    font-size: 3em;
+    margin: 0px;
+    font-weight: lighter;
+}
+
+
+.techSectionContent{
+    margin-top: 15px;
+    flex-basis: 60%;
+    width: 45vw;
+    p{
+        line-height: 25px;
+    }
+    ul li {
+        padding: 5px 0px;
+        margin-left: 15px;
+    }
+}
+
+.techSectionContent .techSectionText{
+    padding-left: 30px;
+}
+
+.techBtnContainer{
+    display: flex; 
+    align-self: center; 
+    margin-bottom: 20px;
+    .linkBtn{
+        background-color: #353f69; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold;
+        max-width: 10%;
+        width: auto; 
+        height: auto;
+        display: flex; 
+        margin: auto; 
+    }
+}
+
+
+// media query 
+
+// 1000 px large devices 
+@media all and (max-width: 1000px) {
+    .techSectionHeaderText {
+        flex-basis: 55%;
+    }
+    
+    .techSectionHeaderText h1{
+        font-size: 2.5em;
+    }
+    .techSectionVideoContainer .techSectionVideo {
+        height: 265px;
+    }
+    .techSectionContent {
+        width: 50vw;
+    }
+    .techBtnContainer{
+        .linkBtn{
+            max-width: 20%;
+        }
+    }
+}
+// 800 px medium devices
+@media all and (max-width: 800px) {
+    .techSectionHeaderText h1{
+        font-size: 2.3em;
+    }
+    .techSectionVideoContainer  {
+        width: 55vw;
+    }
+    .techSectionVideoContainer .techSectionVideo {
+        height: 250px;
+    }
+    .techSectionContent {
+        width: 50vw;
+    }
+    .techSectionContent .techSectionText{
+        padding-left: 15px;
+    }
+    .techBtnContainer{
+        .linkBtn{
+            max-width: 20%;
+        }
+    }
+
+} 
+// 600 px small devices 
+@media all and (max-width: 600px) {
+    .techSectionHeader {
+        flex-flow: column;
+        align-items: center;
+    }
+    .techSectionHeaderText {
+        text-align: center;
+        flex-basis: 47%;
+    }
+    .techSectionHeaderText h1{
+        font-size: 2.4em;
+    }
+    .techSectionVideoContainer {
+        width: 65vw;
+    }
+    .techSectionVideoContainer .techSectionVideo {
+        height: 220px;
+    }
+    .techSectionContent {
+        width: 50vw;
+    }
+    .techSectionContent{
+        p{
+            font-size: 0.9em;
+        }
+        h3 {
+            font-size: 1em;
+        }
+        h1 {
+            font-size: 1.6em;
+        }
+        ul li {
+            font-size: 0.9em;
+            padding: 5px 0px;
+            margin-left: 15px;
+        }
+    }
+    .techBtnContainer{
+        .linkBtn{
+            max-width: 25%;
+        }
+    }
+
+}
+// 400 px xsmall devices 
+@media all and (max-width: 400px) {
+    .techSectionHeader {
+        flex-flow: column;
+        align-items: center;
+    }
+    .techSectionHeaderText {
+        text-align: center;
+        flex-basis: 47%;
+    }
+    .techSectionVideoContainer {
+        width: 70vw;
+    }
+    .techSectionVideoContainer .techSectionVideo {
+        height: 166px;
+    }
+    .techSectionContent {
+        width: 70vw;
+    }
+    .techSectionContent{
+        p{
+            font-size: 0.8em;
+        }
+        h3 {
+            font-size: 0.9em;
+        }
+        h1 {
+            font-size: 1.4em;
+        }
+        ul li {
+            font-size: 0.9em;
+            padding: 5px 0px;
+            margin-left: 15px;
+        }
+    }
+    .techBtnContainer{
+        .linkBtn{
+            max-width: 25%;
+        }
+    }
+
+}

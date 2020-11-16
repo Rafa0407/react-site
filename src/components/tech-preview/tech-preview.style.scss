@@ -1,0 +1,21 @@
+.techPreviewSection{
+    background-color: #f74f69; 
+    margin-top: 25px;
+    display: flex; 
+}
+.techContainer{
+    list-style: none;
+    background: #f74f68;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+@media all and (max-width: 600px) {
+    .techContainer {
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      padding: 0;
+    }
+  }

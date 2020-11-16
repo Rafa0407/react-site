@@ -1,0 +1,110 @@
+.navBarContainer{
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+.topnav {
+  right: 15px;
+  list-style: none;
+  margin-right: 100px;
+  background: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  }
+
+  .topnav .linkTo {
+    color: #364066;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+  }
+  
+  .topnav .linkTo:hover {
+    text-decoration: underline; 
+    text-decoration-color:#f74f68;
+  }
+  
+  .topnav .linkTo.active {
+    background-color: #f0c936;
+    color: white;
+  } 
+
+  .menuLogo {
+    width: 85px;
+    height: 60px;
+  }
+
+  .logoContainer{
+    list-style: none;
+    margin-left: 100px;
+    background: transparent;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    position: absolute;
+  } 
+
+  
+  @media all and (max-width: 900px) {
+    .navBarContainer{
+      z-index: 10;
+    }
+  }
+  @media all and (max-width: 700px) {
+    .topnav{
+      margin-right: 40px;
+    }
+    .logoContainer{
+      margin-left: 40px;
+    } 
+  }
+
+@media all and (max-width: 600px) {
+  .navBarContainer{
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    position: relative;
+    .topnav{
+      display: none; 
+    }
+    .logoContainer{
+      margin: auto;
+      background: transparent;
+      position: relative;
+      .menuLogo {
+        object-fit: cover;
+        width: 220px;
+        height: 140px;
+      }
+    } 
+  }
+}
+@media all and (max-width: 600px) {
+  .navBarContainer{
+    .logoContainer{
+      .menuLogo {
+        object-fit: cover;
+        width: 200px;
+        height: 100px;
+      }
+    } 
+  }
+}
+@media all and (max-width: 400px) {
+  .navBarContainer{
+    .logoContainer{
+      .menuLogo {
+        object-fit: cover;
+        width: 130px;
+        height: 70px;
+      }
+    } 
+  }
+}

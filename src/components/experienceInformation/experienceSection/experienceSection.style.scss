@@ -1,0 +1,91 @@
+.expAreasCard{
+    display: flex;
+    flex-flow: column;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.ExpInfoCardHeader{
+    display: flex;
+    flex-flow: row;
+    margin-top: 15px;
+}
+.ExpInfoCardHeader h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+.ExpInfoCardContent{
+    display: flex;
+    flex-flow: row;
+    max-width: 100%;
+}
+.ExpInfoCardContentImg{
+    max-width: 100%;
+    width: 30vw;
+    margin: auto;
+    text-align: left;
+}
+.ExpInfoCardContentImg img {
+    object-fit: cover;
+    width: 15vw;
+}
+.ExpInfoCardContentText{
+    text-align: left;
+    width: 40vw;
+    padding: 25px;
+}
+.ExpInfoCardContentText p{
+    font-size: 1.2em;
+}
+.ExpInfoCardBrand{
+    max-width: 100%;
+    width: 10vw;
+    margin: 10px;
+}
+.brandContainer{
+    display: flex;
+    justify-content: center;
+}
+
+@media all and (max-width: 810px) {
+.expInfoSection .expHeader p {
+    font-size: 1.2em;
+    text-align: center;
+}
+.ExpInfoCardContent {
+    flex-flow: column;
+}
+.ExpInfoCardContentText {
+    text-align: center;
+    width: 80vw;
+}
+.ExpInfoCardContentImg {
+    text-align: center;
+}
+.ExpInfoCardContentImg img {
+    width: 25vw;
+}
+.ExpInfoCardContentText p{
+    font-size: 1.3em;
+}
+}
+
+@media all and (max-width: 689px) {
+.ExpInfoCardContentText p{
+    font-size: 1em;
+}
+.ExpInfoCardContentImg img {
+    width: 35vw;
+}
+}
+
+@media all and (max-width: 400px) {
+.ExpInfoCardContentText p{
+    font-size: 1em;
+}
+.ExpInfoCardContentImg img {
+    width: 35vw;
+}
+}

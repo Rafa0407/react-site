@@ -1,0 +1,63 @@
+.expInfoSection{
+    background-color: #f6f6f6; 
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 50vh;
+    width: 80vw;
+    justify-content: center;
+    margin: auto;
+    
+
+.expHeader{
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    width: 70vw;
+    text-align: center;
+    //height: 50px;
+} 
+.expHeader h1{
+    margin: auto;
+    font-size: 3em;
+    padding: 20px;
+}
+.expHeader p{
+    margin: auto;
+    font-size: 1.2em;
+} 
+.expHeaderImg{ 
+    object-fit: cover;
+    max-width: 100%;
+    width: 15vw;
+    margin: auto;
+} 
+}
+
+
+@media all and (max-width: 810px) {
+.expInfoSection .expHeader h1 {
+    font-size: 2.5em;
+}
+.expInfoSection .expHeaderImg {
+    width: 20vw;
+}
+}
+
+@media all and (max-width: 689px) {
+.expInfoSection .expHeader h1 {
+    font-size: 2em;
+}
+.expInfoSection .expHeaderImg {
+    width: 20vw;
+}
+}
+
+@media all and (max-width: 400px) {
+.expInfoSection .expHeader h1 {
+    font-size: 1.5em;
+}
+.expInfoSection .expHeaderImg {
+    width: 20vw;
+}
+}

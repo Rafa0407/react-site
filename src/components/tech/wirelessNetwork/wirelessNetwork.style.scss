@@ -1,0 +1,46 @@
+.wirlessHeaderImage{
+    max-width: 100%;
+    .wirlessHeaderLogo{
+        object-fit: cover;
+        width: 100px;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+
+.wirlessHeaderText{
+    flex-basis: 40%;
+    // background-color: #e0e0e0; 
+    text-align: left;
+}
+.wirlessHeaderText h1{
+    font-size: 2em;
+    margin: 0px;
+    font-weight: lighter;
+}
+
+@media all and (max-width: 800px) {
+    .wirlessHeaderText{
+        flex-basis: 50%;
+        text-align: center;
+    }
+    .wirlessHeaderText h1{
+        font-size: 1.5em;
+    }
+    .wirlessHeaderText p {
+        font-size: 0.8;   
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .wirlessHeaderText{
+        flex-basis: 50%;
+        text-align: center;
+    }
+    .wirlessHeaderText h1{
+        font-size: 1.4em;
+    }
+    .wirlessHeaderText p {
+        font-size: 0.8;   
+    }
+  }

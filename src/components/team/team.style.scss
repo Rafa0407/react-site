@@ -1,0 +1,45 @@
+.succesTeamSection{
+    height: 80vh;
+    background-color: #ffffff; 
+    flex-flow: column;
+}
+
+// Header 
+.teamHeader{
+    display: flex;
+    flex-flow: row;
+    max-width: 100%;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    padding: 70px;
+}
+.teamHeader h1{
+    margin: auto;
+    font-size: 3em;
+}
+ 
+// Cards 
+.teamCardContainer{
+    padding: 50px;
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+  }
+
+  @media all and (max-width: 500px) {
+    .teamHeader{
+        padding: 40px;
+    }
+    .teamHeader h1{
+        font-size: 1.5em;
+    }
+    .teamCardContainer{
+        padding: 40px;
+        height: 50vh;
+        display: flex;
+        flex-flow: column;
+    }
+}

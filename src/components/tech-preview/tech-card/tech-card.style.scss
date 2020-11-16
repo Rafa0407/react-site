@@ -1,0 +1,81 @@
+.techCardContainer{
+    width: 320px;
+    text-align: center;
+    margin-top: 15px;
+}
+.techImageContainer{
+    flex-basis: 70%;
+    .techCardImage{
+        height: 17vh;
+    }
+}
+.techInfoContainer{
+    flex-basis: 30%;
+    align-self: center; 
+    .techTextInfo{
+        text-align: center;
+    }
+    .pharagrapContainer{
+        height: 95px;
+        display: none;
+    }
+    .techBtn{ 
+        background-color: #353f69; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold;
+        max-width: 50%;
+        width: auto; 
+        height: auto;
+    } 
+}
+.techCardContainer{
+    .techBtn{
+        display: inline-block;
+    }
+    .pharagrapContainer{
+        display: flex;
+    }
+}
+
+
+@media all and (max-width: 756px) {
+    .techCardContainer {
+        width: 200px;
+    }
+    .techImageContainer .techCardImage{
+        height: 9vh;
+    }
+    .techPreviewSection{
+        height: 0%;
+    }
+  }
+  @media all and (max-width:  400px) {
+    .techCardContainer {
+        width: 55vw;
+    }
+    .techPreviewSection{
+        height: 0%;
+    }
+    .techInfoContainer {
+        margin: 15px;
+    }
+    .techInfoContainer .techTextInfo {
+        margin: auto;
+    }
+    .techImageContainer .techCardImage{
+        height: 10vh;
+    }
+    .techCardContainer{
+        .techBtn{
+            display: inline-block;
+        }
+        .pharagrapContainer{
+            padding: 10px;
+            align-items: center;
+        }
+    }
+  }
